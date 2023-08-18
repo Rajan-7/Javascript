@@ -1,9 +1,7 @@
 // console.log("hello friends");
 
-
-
 // values & variables
-
+// var 1myNmae= "ahri";
 var _myMother = "God";
 var _myName__ = "Ram";
 var $my__Name = "Hello ";
@@ -57,7 +55,7 @@ var isNumber = 9823242;
 
 // expressions & operators
 
-// assignment operator
+//1. assignment operator
 var x= 8;
 var y=8;
 // console.log(`Is both x & y are equal : ${x === y}`);
@@ -77,9 +75,63 @@ var y=8;
 // prefix: work with updated value
 var num = 17;
 var newNum = --num + 3;
-console.log(num);
-console.log(newNum);
+// console.log(num);
+// console.log(newNum);
 
+//3. comparison operator
+var a=80;
+var b=40;
+// equal to
+// console.log(a == b);
+
+// not equal to
+// console.log(a !== b);
+
+// Greater than
+// console.log(a > b);
+
+// Greater than or equal to 
+// console.log(a >= b);
+
+// less than
+// console.log(a < b);
+
+// less than or equal to
+// console.log(a <= b);
+
+// 4.Logical operator
+
+var a = 30;
+var b = 20;
+
+// logical AND &&
+// console.log(a > b && b > 25);
+
+// Logical OR ||
+// console.log(a > b || b > 25);
+
+// Logical NOT !
+// console.log(!(a > b));
+
+// 5. String Conctenation operator (+)
+
+// var firstName = "Jhon ";
+// var lastName = "Cena"
+
+// console.log(firstName + lastName);
+// console.log(firstName + " Van");
+
+// What happen when you add number & string
+// console.log("Hello" + 10);
+
+var a=20;
+var b=40;
+
+var c = b;
+    b=a;
+    a=c;
+console.log(a);
+console.log(b);
 
 
 
