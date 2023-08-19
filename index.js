@@ -23,7 +23,7 @@ var isCorrect = true;
 // practices
 // concadinate
 // console.log(10+"5");
-// console.log(9-"5"); 
+// console.log(9-"5");
 // console.log("java"+" script");
 // console.log(" "+" ");
 // console.log(" "+"0");
@@ -32,7 +32,6 @@ var isCorrect = true;
 // console.log(true+true);
 // console.log(false+false);
 // console.log(false-true);
-
 
 //  null vs undefined
 var useLess = null;
@@ -56,8 +55,8 @@ var isNumber = 9823242;
 // expressions & operators
 
 //1. assignment operator
-var x= 8;
-var y=8;
+var x = 8;
+var y = 8;
 // console.log(`Is both x & y are equal : ${x === y}`);
 
 // 2. arthmetic operator
@@ -79,8 +78,8 @@ var newNum = --num + 3;
 // console.log(newNum);
 
 //3. comparison operator
-var a=80;
-var b=40;
+var a = 80;
+var b = 40;
 // equal to
 // console.log(a == b);
 
@@ -90,7 +89,7 @@ var b=40;
 // Greater than
 // console.log(a > b);
 
-// Greater than or equal to 
+// Greater than or equal to
 // console.log(a >= b);
 
 // less than
@@ -124,18 +123,22 @@ var b = 20;
 // What happen when you add number & string
 // console.log("Hello" + 10);
 
-var a=20;
-var b=40;
+// Swapping two number
+// var a=20;
+// var b=40;
 
-var c = b;
-    b=a;
-    a=c;
-console.log(a);
-console.log(b);
+// var c = b;
+//     b=a;
+//     a=c;
+// console.log("Value of A after swaping "+a);
+// console.log("Value of B after swaping "+b);
 
+// Swapping two number without using third variables
+var a = 10;
+var b = 20;
 
-
-
-
-
-
+a = a + b;
+b = a - b;
+a = a - b;
+console.log("Value of A after swaping " + a);
+console.log("Value of B after swaping " + b);
