@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.width{
+    width: 100%;
+}
+.height{
+    height: 100vh;
+}
