@@ -140,5 +140,45 @@ var b = 20;
 a = a + b;
 b = a - b;
 a = a - b;
-console.log("Value of A after swaping " + a);
-console.log("Value of B after swaping " + b);
+// console.log("Value of A after swaping " + a);
+// console.log("Value of B after swaping " + b);
+
+// == vs === data value vs data type
+var num1 = 5;
+var num2 = "5";
+// console.log(typeof(num1));
+// console.log(typeof(num2));
+// console.log(num2 === num1);
+
+// Control Statement
+var value = "sunny";
+//  if( value == 'sunny'){
+//     console.log("Weather is sunny");
+//  }
+//  else{
+//     console.log("Weather is not sunny");
+//  }
+
+// sol 
+var year = 2021;
+// if (year % 4 == 0) {
+//   if (year % 100 == 0) {
+//     if (year % 400 == 0) {
+//       console.log("The year " + year + " is a leap year");
+//     } else {
+//       console.log("The year " + year + " is not a leap year");
+//     }
+//   } else {
+//     console.log("The year " + year + " is a leap year");
+//   }
+// } else {
+//   console.log("The year " + year + " is not a leap year");
+// }
+
+// truthy vs falsy value
+// 0,"",undefined,NaN,null is falsy value
+if (score = 5){
+    console.log("😂 We score zero i.e game loss");
+}else{
+    console.log("😎 We won the game");
+}
