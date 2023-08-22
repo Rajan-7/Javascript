@@ -151,6 +151,7 @@ var num2 = "5";
 // console.log(num2 === num1);
 
 // Control Statement
+// if-else statement
 var value = "sunny";
 //  if( value == 'sunny'){
 //     console.log("Weather is sunny");
@@ -177,8 +178,83 @@ var year = 2021;
 
 // truthy vs falsy value
 // 0,"",undefined,NaN,null is falsy value
-if (score = 5){
-    console.log("😂 We score zero i.e game loss");
-}else{
-    console.log("😎 We won the game");
+// if (score = 5){
+//     console.log("😂 We score zero i.e game loss");
+// }else{
+//     console.log("😎 We won the game");
+// }
+
+// Conditional operator (Ternery operator)
+// variable = (conditon) ?  value1 : value2;
+
+var age = 18;
+// console.log((age >= 18) ? "You can vote" :"You cannot vote");
+
+// Switch statement
+// area of circle, traingle & rectangle
+var area = "circle";
+var pi = 3.142,
+  l = 5,
+  b = 4,
+  r = 7;
+
+// if ((area = "circle")) {
+//   console.log("Area of circle is " + pi * r ** 2);
+// } else if ((area = "traingle")) {
+//   console.log("Area of traingle is " + (l * b) / 2);
+// } else if ((area = "rectangle")) {
+//   console.log("Area of rectangle is " + l * b);
+// } else {
+//   console.log("Enter valid information");
+// }
+
+// Using switch
+var area = "traingle";
+// var pi = 3.142,
+//   l = 5,
+//   b = 4,
+//   r = 7;
+
+// switch (area) {
+//   case "circle":
+//     console.log("Area of circle is " + pi * r ** 2);
+//     break;
+//   case "traingle":
+//     console.log("Area of traingle is " + (l * b) / 2);
+//     break;
+//   case "circle":
+//     console.log("Area of rectangle is " + pi * r ** 2);
+//     break;
+//   default:
+//     console.log("Enter valid information");
+//     break;
+// }
+
+//🖍️while statement
+// Execute only if the test condition is true
+// Check condition & only enter into BLOCKS SCOPE
+var i = 0;
+// block scope{}
+// while(i <= 10){
+//     console.log("Number "+ i);
+//     i++;
+// }
+//🖍️ do-while statement
+// execute atleast one statement whether the condition is satisfied or unsatisfied
+var i = 11;
+// do{
+//     // console.log(""+ i);
+//     i++;
+// }while(i <= 100);
+
+// 🖍️ For loop 
+// var i = 0;
+// for (i=0;i<=10;i++){
+//     debugger;
+//     console.log("Ankka " + i);
+// }
+
+var num = 8;
+for (var i = 1; i <= 10;i++){
+    console.log("8 * "+ i +" = " + num * i);
 }
