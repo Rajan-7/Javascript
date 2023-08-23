@@ -247,14 +247,57 @@ var i = 11;
 //     i++;
 // }while(i <= 100);
 
-// 🖍️ For loop 
+// 🖍️ For loop
 // var i = 0;
 // for (i=0;i<=10;i++){
 //     debugger;
 //     console.log("Ankka " + i);
 // }
 
+// Challenge
 var num = 8;
-for (var i = 1; i <= 10;i++){
-    console.log("8 * "+ i +" = " + num * i);
-}
+// for (var i = 1; i <= 10;i++){
+//     console.log(num + " * "+ i +" = " + num * i);
+// }
+
+// ✍🏿Function in javascript
+// Function Definition
+// function functionName(){
+// }
+
+// function sum() {
+//   var x = 4, y= 8;
+//   var result = x+y;
+//   return result;
+// }
+// console.log(sum());
+
+// 🖍️ Function parameters vs Function arguments
+// function sum(x, y) {
+//   var result = x + y;
+//   console.log(result);
+//   // return result;
+// }
+// sum(1,1);
+// sum(2,2);
+
+// console.log(8 - 'St');
+
+// Why functions? : resusablility i.e define it once & use it multiple times
+// It support DRY => DONOT REPEAT YOURSELF
+
+// Function expression => assigning function into a variables
+// When function reach return statement , it stop executing
+
+// function sum(x, y) {
+//   return result = x + y;
+// }
+// var functionExp = sum(6,1);
+// console.log("sum of two number is "+functionExp);
+
+// 🖍️ anonymous Function
+// var funcExp = function(x,y){
+//   return result = x+y;
+// }
+// var sum = funcExp(4,5);
+// console.log(sum);
