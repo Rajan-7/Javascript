@@ -327,18 +327,18 @@ var num = 8;
 // myName = "Roman Change";
 // console.log(myName);
 
-function myData(){
- const myName = "Roman";
- console.log(myName);
-  if(true){
-   const myAge = "Seven";
+function myData() {
+  const myName = "Roman";
+  // console.log(myName);
+  if (true) {
+    const myAge = "Seven";
     // console.log("Inner "+ myName);
     // console.log("Inner "+ myAge);
   }
   // console.log("Outer "+ myAge);
 }
-console.log(myName);
- myData();
+// console.log(myName);
+myData();
 
 // function checkLet(){
 //   let name = "Raj";
@@ -350,3 +350,16 @@ console.log(myName);
 //   console.log(address);
 // }
 // checkLet();
+
+// 🖍️ Template literals 
+// var num = 8;
+// for (var i = 1; i <= 10;i++){
+//     // console.log(num + " * "+ i +" = " + num * i);
+//     console.log(`${num} * ${i} = ${num * i}`);
+// }
+
+// 🖍️ Default parameter
+function add(a,b=9){
+  return a+b;
+}
+console.log(add(4));
