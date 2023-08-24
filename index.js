@@ -9,7 +9,7 @@ var $my__Name = "Hello ";
 
 // Data types in java script
 
-var myData = "Data";
+// var myData = "Data";
 var myAge = 20;
 // console.log(myAge);
 
@@ -301,3 +301,52 @@ var num = 8;
 // }
 // var sum = funcExp(4,5);
 // console.log(sum);
+
+// Modern Javascript ECMAscript13
+
+// 🖍️ Let vs var vs const
+
+// var => function scope
+// let & const => Block scope
+
+// var myName = "Roman";
+// console.log(myName);
+
+// myName = "Roman Change";
+// console.log(myName);
+
+// let myName = "Roman";
+// console.log(myName);
+
+// myName = "Roman Change";
+// console.log(myName);
+
+// const myName = "Roman";
+// console.log(myName);
+
+// myName = "Roman Change";
+// console.log(myName);
+
+function myData(){
+ const myName = "Roman";
+ console.log(myName);
+  if(true){
+   const myAge = "Seven";
+    // console.log("Inner "+ myName);
+    // console.log("Inner "+ myAge);
+  }
+  // console.log("Outer "+ myAge);
+}
+console.log(myName);
+ myData();
+
+// function checkLet(){
+//   let name = "Raj";
+//   if(name === "Raj"){
+//     let address = "Ktm";
+//     console.log("Inner "+ name);
+//     console.log("Inner "+ address);
+//   }
+//   console.log(address);
+// }
+// checkLet();
