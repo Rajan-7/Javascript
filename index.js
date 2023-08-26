@@ -351,7 +351,7 @@ myData();
 // }
 // checkLet();
 
-// 🖍️ Template literals 
+// 🖍️ Template literals
 // var num = 8;
 // for (var i = 1; i <= 10;i++){
 //     // console.log(num + " * "+ i +" = " + num * i);
@@ -359,7 +359,23 @@ myData();
 // }
 
 // 🖍️ Default parameter
-function add(a,b=9){
-  return a+b;
-}
-console.log(add(4));
+// function add(a,b=9){
+//   return a+b;
+// }
+// console.log(add(4));
+
+// 🖍️ Fat arrow function
+
+// function sum() {
+//   let x = 6,
+//     y = 7;
+//   let sum = x + y;
+//   return `The sum of two number is ${sum}`;
+// }
+// console.log(sum());
+
+// Using fat arrow function
+
+const sum = () =>  `The sum of two number using arrow function is ${(x=9)+(y=9)}`
+console.log(sum());
+
