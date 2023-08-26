@@ -376,6 +376,48 @@ myData();
 
 // Using fat arrow function
 
-const sum = () =>  `The sum of two number using arrow function is ${(x=9)+(y=9)}`
-console.log(sum());
+// const sum = () =>  `The sum of two number using arrow function is ${(x=9)+(y=9)}`
+// console.log(sum());
 
+// 🖍️ Arrays in Javascript
+// Start with 0 index
+// First element = lower index/lower boundary
+// Last element = upper index/upper Boundary
+
+// ✍🏿 Traversal in Arrays
+
+// var myFriends = ['Rose','Roman','Raz','Jhon'];
+// console.log(myFriends[myFriends.length - 1]);
+
+// 🖍️ For in loop
+// var myFriends = ['Rose','Roman','Raz','Jhon'];
+
+// for (var i = 0; i<myFriends.length;i++){
+//   console.log(myFriends[i]);
+// }
+
+// 😎Using For in loop & For of loop
+
+var myFriends = ["Rose", "Roman", "Raz", "Jhon"];
+
+// provide index number
+// for (let elements in myFriends){
+//   console.log(elements);
+// }
+
+// provide value of arrays
+// for (let elements of myFriends){
+//   console.log(elements);
+// }
+
+// ✍🏿 forEach loop
+
+// myFriends.forEach(function(element, index,array){
+//   console.log(element + " Index" + index + " "+array);
+// })
+
+// Using fat arrow function
+
+myFriends.forEach((element, index, array) => {
+  console.log(element + " Index" + index + " " + array);
+});
