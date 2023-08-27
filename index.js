@@ -398,7 +398,7 @@ myData();
 
 // 😎Using For in loop & For of loop
 
-var myFriends = ["Rose", "Roman", "Raz", "Jhon"];
+// var myFriends = ["Rose", "Roman", "Raz", "Jhon"];
 
 // provide index number
 // for (let elements in myFriends){
@@ -418,6 +418,44 @@ var myFriends = ["Rose", "Roman", "Raz", "Jhon"];
 
 // Using fat arrow function
 
-myFriends.forEach((element, index, array) => {
-  console.log(element + " Index" + index + " " + array);
-});
+// myFriends.forEach((element, index, array) => {
+//   console.log(element + " Index" + index + " " + array);
+// });
+
+// 🖍️ Searching & filter in array
+// 👉 Array.prototype.indexof()
+// var myFriends = ["Rose", "Roman", "Raz", "Jhon","Sonam"];
+// console.log(myFriends.indexOf("Sonam"));
+
+// 👉 Find method: Only return first satisfy value
+// const prices =[200,300,400,500,600,700];
+// const currVal = prices.find((cur)=>cur < 400);
+// console.log(currVal);
+
+// console.log(prices.find((cur)=>cur > 1400));
+
+// 👉 FindIndex method
+// console.log(prices.findIndex((cur)=>cur > 1400));
+
+// 🖍️ Filter mehtod
+// const prices =[200,300,400,500,600,700];
+
+// const filterPrice = prices.filter((elem,index)=>{
+//   return elem > 400;
+// })
+// console.log(filterPrice);
+
+// 👉 Sorting array:sort() : Only work on string 
+// const alphabets = ['B','D','E','A','C'];
+// console.log(alphabets.sort());
+// const number = [1000,900,800,850,100,200];
+// checks the initial number value
+// console.log(number.sort());
+
+// 🖍️ CRUD in array
+const arrayOfAnimal = ['Dog','sheep','cow','pig'];
+arrayOfAnimal.push('Chicken');
+console.log(arrayOfAnimal);
+
+
+
