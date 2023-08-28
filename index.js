@@ -1,5 +1,7 @@
 // console.log("hello friends");
 
+
+
 // values & variables
 // var 1myNmae= "ahri";
 var _myMother = "God";
@@ -410,7 +412,7 @@ myData();
 //   console.log(elements);
 // }
 
-// ✍🏿 forEach loop
+// 🖍️✍🏿 forEach loop
 
 // myFriends.forEach(function(element, index,array){
 //   console.log(element + " Index" + index + " "+array);
@@ -441,7 +443,7 @@ myData();
 // const prices =[200,300,400,500,600,700];
 
 // const filterPrice = prices.filter((elem,index)=>{
-//   return elem > 400;
+//   return elem > 1400;
 // })
 // console.log(filterPrice);
 
@@ -453,9 +455,119 @@ myData();
 // console.log(number.sort());
 
 // 🖍️ CRUD in array
-const arrayOfAnimal = ['Dog','sheep','cow','pig'];
-arrayOfAnimal.push('Chicken');
-console.log(arrayOfAnimal);
+
+// Array.push : return new length of an array & it add element at the end of an array
+// const arrayOfAnimal = ['Dog','sheep','cow','pig'];
+// const count = arrayOfAnimal.push('Chicken');
+// arrayOfAnimal.push('Goat','buffalo');
+// console.log(arrayOfAnimal);
+// console.log(count);
+
+// 👉 Array.unshift : add element at the very first index
+// const arrayOfAnimal = ['Dog','sheep','cow','pig'];
+// arrayOfAnimal.unshift('Chicken');
+// arrayOfAnimal.unshift('Goat','buffalo');
+// console.log(arrayOfAnimal);
+
+// 2nd example
+// const myNum = [1,2,3,4];
+// myNum.unshift(7,8);
+// console.log(myNum);
+
+// 🖍️Array.pop() : remove the last element of an array & return that element
+// const arrayOfString = ['new','world','of','javascript'];
+// console.log(arrayOfString.pop());
+// console.log(arrayOfString);
+
+// 🖍️Array.shift():remove the first element of an array & return that element
+// const arrayOfString = ['new','world','of','javascript'];
+// console.log(arrayOfString.shift());
+// console.log(arrayOfString);
+
+// 🕹️ Challenge Time
+// Challenge 1:Add dec at the end of an array
+// const months = ['jan','march','april','june','july'];
+// const returnType = months.splice(months.length,0,'Dec');
+// console.log(months);
+
+// Splice method return [] array when nothing is deleted as its output
+// It returns the deleted elements as its output
+// console.log(returnType);
+
+// Challenge 3:update march to March
+// const indexOfMarch = months.indexOf('march');
+// if(indexOfMarch != -1){
+//   const updateMonth = months.splice(indexOfMarch,1,'March');
+// }else{
+//   console.log("No such data");
+// }
+// months.splice(1,1,'March');
+// console.log(months);
+
+// Challenge 4: Delete june
+// const indexOfJune = months.indexOf('june');
+// if(indexOfJune != -1){
+//   const updateMonth = months.splice(indexOfJune,1,);
+//   console.log(updateMonth);
+// }else{
+//   console.log("No such data");
+// }
+// console.log(months);
+
+// const indexOfMonth = months.indexOf('april');
+// if(indexOfMonth != -1){
+//   const updateMonth = months.splice(indexOfMonth,2);
+//   console.log(updateMonth);
+// }else{
+//   console.log("No such data");
+// }
+// console.log(months);
+
+// 🖍️🖍️ Map & Reduce in Array
+// 👉 Array.map(): returns a new array containing the results of calling functions
+// Map method are chainable i.e it can chain with filter,reduce
+const arrayNumber = [1,4,9,16,25];
+// Find number which are greater than 9
+// const newArray = arrayNumber.map((curElem,index,arr)=>{
+//    return curElem > 9;
+// })
+
+// const newArr1 = arrayNumber.map((curE,ind,array)=>{
+//   return curE > 4;
+// })
+
+// const newArr2 = arrayNumber.map((curE,index,array)=>{
+//   return curE > 16
+// })
+// console.log(arrayNumber);
+// console.log(newArray);
+
+// let arrayNew = arrayNumber.map((curElm, index, array)=>{
+//   return `The value ${curElm} index number is ${index} belongs to ${array}`
+// })
+// console.log(arrayNew); 
+
+// 🕹️ Challenge time
+// Challenge 1: Find square root of each elements (sol:Math.sqrt())
+// let arr = [25,36,49,64,81];
+// let sqrArr = arr.map((curElem)=>{
+//   return Math.sqrt(curElem)
+// })
+// console.log(sqrArr);
+
+// Challenge 2: Multiply numbers by 2 & return only those which are greater than 10
+let arr = [2,3,4,6,8];
+let multiArrayTwo = arr.map((curElem)=>{
+  return curElem * 2
+}).filter((curElem)=>{
+  return curElem > 10
+})
+console.log(multiArrayTwo);
+
+
+
+
+
 
 
 
