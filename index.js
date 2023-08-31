@@ -1,24 +1,22 @@
 // console.log("hello friends");
 
-
-
 // values & variables
 // var 1myNmae= "ahri";
-var _myMother = "God";
-var _myName__ = "Ram";
-var $my__Name = "Hello ";
+// var _myMother = "God";
+// var _myName__ = "Ram";
+// var $my__Name = "Hello ";
 // console.log(_myName__);
 
 // Data types in java script
 
 // var myData = "Data";
-var myAge = 20;
+// var myAge = 20;
 // console.log(myAge);
 
 // typeof operator
 // console.log(typeof(myAge));
 
-var isCorrect = true;
+// var isCorrect = true;
 // console.log(isCorrect);
 // console.log(typeof(isCorrect));
 
@@ -36,16 +34,16 @@ var isCorrect = true;
 // console.log(false-true);
 
 //  null vs undefined
-var useLess = null;
+// var useLess = null;
 // console.log(useLess);
 // console.log(typeof(useLess));
 
-var standBy;
+// var standBy;
 // console.log(standBy);
 // console.log(typeof(standBy));
 
 // NaN
-var isNumber = 9823242;
+// var isNumber = 9823242;
 // if(!isNaN(isNumber)){
 //     console.log("Great");
 // }
@@ -57,8 +55,8 @@ var isNumber = 9823242;
 // expressions & operators
 
 //1. assignment operator
-var x = 8;
-var y = 8;
+// var x = 8;
+// var y = 8;
 // console.log(`Is both x & y are equal : ${x === y}`);
 
 // 2. arthmetic operator
@@ -74,14 +72,14 @@ var y = 8;
 // console.log(newNum);
 
 // prefix: work with updated value
-var num = 17;
-var newNum = --num + 3;
+// var num = 17;
+// var newNum = --num + 3;
 // console.log(num);
 // console.log(newNum);
 
 //3. comparison operator
-var a = 80;
-var b = 40;
+// var a = 80;
+// var b = 40;
 // equal to
 // console.log(a == b);
 
@@ -102,8 +100,8 @@ var b = 40;
 
 // 4.Logical operator
 
-var a = 30;
-var b = 20;
+// var a = 30;
+// var b = 20;
 
 // logical AND &&
 // console.log(a > b && b > 25);
@@ -136,25 +134,25 @@ var b = 20;
 // console.log("Value of B after swaping "+b);
 
 // Swapping two number without using third variables
-var a = 10;
-var b = 20;
+// var a = 10;
+// var b = 20;
 
-a = a + b;
-b = a - b;
-a = a - b;
+// a = a + b;
+// b = a - b;
+// a = a - b;
 // console.log("Value of A after swaping " + a);
 // console.log("Value of B after swaping " + b);
 
 // == vs === data value vs data type
-var num1 = 5;
-var num2 = "5";
+// var num1 = 5;
+// var num2 = "5";
 // console.log(typeof(num1));
 // console.log(typeof(num2));
 // console.log(num2 === num1);
 
 // Control Statement
 // if-else statement
-var value = "sunny";
+// var value = "sunny";
 //  if( value == 'sunny'){
 //     console.log("Weather is sunny");
 //  }
@@ -163,7 +161,7 @@ var value = "sunny";
 //  }
 
 // sol 
-var year = 2021;
+// var year = 2021;
 // if (year % 4 == 0) {
 //   if (year % 100 == 0) {
 //     if (year % 400 == 0) {
@@ -189,16 +187,16 @@ var year = 2021;
 // Conditional operator (Ternery operator)
 // variable = (conditon) ?  value1 : value2;
 
-var age = 18;
+// var age = 18;
 // console.log((age >= 18) ? "You can vote" :"You cannot vote");
 
 // Switch statement
 // area of circle, traingle & rectangle
-var area = "circle";
-var pi = 3.142,
-  l = 5,
-  b = 4,
-  r = 7;
+// var area = "circle";
+// var pi = 3.142,
+//   l = 5,
+//   b = 4,
+//   r = 7;
 
 // if ((area = "circle")) {
 //   console.log("Area of circle is " + pi * r ** 2);
@@ -211,7 +209,7 @@ var pi = 3.142,
 // }
 
 // Using switch
-var area = "traingle";
+// var area = "traingle";
 // var pi = 3.142,
 //   l = 5,
 //   b = 4,
@@ -235,7 +233,7 @@ var area = "traingle";
 //🖍️while statement
 // Execute only if the test condition is true
 // Check condition & only enter into BLOCKS SCOPE
-var i = 0;
+// var i = 0;
 // block scope{}
 // while(i <= 10){
 //     console.log("Number "+ i);
@@ -243,7 +241,7 @@ var i = 0;
 // }
 //🖍️ do-while statement
 // execute atleast one statement whether the condition is satisfied or unsatisfied
-var i = 11;
+// var i = 11;
 // do{
 //     // console.log(""+ i);
 //     i++;
@@ -257,7 +255,7 @@ var i = 11;
 // }
 
 // Challenge
-var num = 8;
+// var num = 8;
 // for (var i = 1; i <= 10;i++){
 //     console.log(num + " * "+ i +" = " + num * i);
 // }
@@ -329,18 +327,18 @@ var num = 8;
 // myName = "Roman Change";
 // console.log(myName);
 
-function myData() {
-  const myName = "Roman";
-  // console.log(myName);
-  if (true) {
-    const myAge = "Seven";
-    // console.log("Inner "+ myName);
-    // console.log("Inner "+ myAge);
-  }
-  // console.log("Outer "+ myAge);
-}
+// function myData() {
+// const myName = "Roman";
 // console.log(myName);
-myData();
+// if (true) {
+// const myAge = "Seven";
+// console.log("Inner "+ myName);
+// console.log("Inner "+ myAge);
+// }
+// console.log("Outer "+ myAge);
+// }
+// console.log(myName);
+// myData();
 
 // function checkLet(){
 //   let name = "Raj";
@@ -447,7 +445,7 @@ myData();
 // })
 // console.log(filterPrice);
 
-// 👉 Sorting array:sort() : Only work on string 
+// 👉 Sorting array:sort() : Only work on string
 // const alphabets = ['B','D','E','A','C'];
 // console.log(alphabets.sort());
 // const number = [1000,900,800,850,100,200];
@@ -526,7 +524,7 @@ myData();
 // 🖍️🖍️ Map & Reduce in Array
 // 👉 Array.map(): returns a new array containing the results of calling functions
 // Map method are chainable i.e it can chain with filter,reduce
-const arrayNumber = [1,4,9,16,25];
+// const arrayNumber = [1,4,9,16,25];
 // Find number which are greater than 9
 // const newArray = arrayNumber.map((curElem,index,arr)=>{
 //    return curElem > 9;
@@ -545,7 +543,7 @@ const arrayNumber = [1,4,9,16,25];
 // let arrayNew = arrayNumber.map((curElm, index, array)=>{
 //   return `The value ${curElm} index number is ${index} belongs to ${array}`
 // })
-// console.log(arrayNew); 
+// console.log(arrayNew);
 
 // 🕹️ Challenge time
 // Challenge 1: Find square root of each elements (sol:Math.sqrt())
@@ -556,18 +554,59 @@ const arrayNumber = [1,4,9,16,25];
 // console.log(sqrArr);
 
 // Challenge 2: Multiply numbers by 2 & return only those which are greater than 10
-let arr = [2,3,4,6,8];
-let multiArrayTwo = arr.map((curElem)=>{
-  return curElem * 2
-}).filter((curElem)=>{
-  return curElem > 10
-})
-console.log(multiArrayTwo);
+// let arr = [2,3,4,6,8];
+// let multiArrayTwo = arr.map((curElem)=>{
+//   return curElem * 2
+// }).filter((curElem)=>{
+//   return curElem > 10
+// })
+// console.log(multiArrayTwo);
 
+// 🖍️ Reduce Method : convert 3D or 2D array into single dimensional array
+// 👉 It takes four arguments : accumulator , initial value, initial index, source array
+//✍🏿 let arr = [5,6,2];
+// let sum = 0
+// let i = 0 ;
+// while ( i < arr.length){
+//    sum  = sum +  arr[i]
+//    i ++
+// }
+// console.log(sum);
 
+//✍🏿 let arr = [5,6,2];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++){
+//   sum += arr[i];
+// }
+// console.log(sum);
 
+// let arr = [5,6,2];
+// const sum = arr.reduce((acc,curElm,index,array)=>{
+//   return acc += curElm;
+// },8)
+// console.log(sum);
 
+// let arr = [2,3,4,5];
+// let sum = arr.map((curElem)=>curElem * 2).filter((curElem)=>curElem > 4).reduce((acc,curElem)=>{
+//   return acc += curElem;
+// })
+// console.log(sum);
 
+// 🖍️ Fattening an array
+// const array = [
+//   ["arr", "arr2"],
+//   ["arr3", "arr4"],
+//   ["arr5", "arr6"],
+// ];
 
+// const flatArray = array.reduce((acc,cE)=>{
+//   return acc.concat(cE);
+// })
+// console.log(flatArray);
 
+// 🖍️👉 String in javascript
+// Something that is written insides the quotes
 
+// 🖍️ Escape character
+let char1 = "my name \"Eagle\"";
+console.log(char1);
