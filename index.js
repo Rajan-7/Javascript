@@ -608,5 +608,5 @@
 // Something that is written insides the quotes
 
 // 🖍️ Escape character
-let char1 = "my name \"Eagle\"";
-console.log(char1);
+// let char1 = "my name \"Eagle\"";
+// console.log(char1);
