@@ -610,3 +610,9 @@
 // 🖍️ Escape character
 // let char1 = "my name \"Eagle\"";
 // console.log(char1);
+
+let ar = [2,3,4];
+const sum = ar.reduce((acc,cur)=>{
+    return acc += cur;
+});
+console.log(sum);
