@@ -1,5 +1,7 @@
 // console.log("hello friends");
 
+const { Logger } = require("sass");
+
 // values & variables
 // var 1myNmae= "ahri";
 // var _myMother = "God";
@@ -592,6 +594,12 @@
 // })
 // console.log(sum);
 
+// let ar = [2,3,4];
+// const sum = ar.reduce((acc,cur)=>{
+//     return acc += cur;
+// });
+// console.log(sum);
+
 // 🖍️ Fattening an array
 // const array = [
 //   ["arr", "arr2"],
@@ -608,11 +616,24 @@
 // Something that is written insides the quotes
 
 // 🖍️ Escape character
-// let char1 = "my name \"Eagle\"";
+// let char1 = 'my name \'Eagle\'';
 // console.log(char1);
 
-let ar = [2,3,4];
-const sum = ar.reduce((acc,cur)=>{
-    return acc += cur;
-});
-console.log(sum);
+// 👉Finding a string in string
+// let myData = "Hello my friends , how are you ?";
+// console.log(myData.indexOf("f",10));
+
+// let myData = "Hello my friends , how are you ?";
+// console.log(myData.lastIndexOf("f",10));
+
+// 🖍️👉 Searching string in a string
+// search() method cann't take second arguments as start position as indexOf
+// let myData = "My name is Roman";
+// let searchData = myData.search("name");
+// console.log(searchData);
+
+// 👉Extracting string parts
+
+
+
+
