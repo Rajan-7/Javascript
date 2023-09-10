@@ -633,7 +633,30 @@ const { Logger } = require("sass");
 // console.log(searchData);
 
 // 👉Extracting string parts
+// 🖍️Slice () methods:it select the start arguments but doesn't select the last arguments
+// let str = "Apple , banana, mango";
+// let sliceRes = str.slice(8,-1);
+// console.log(sliceRes);
 
+// 🕹️Only display 280 characters
 
+// let myTweet = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laboriosam dignissimos repudiandae nisi voluptates quod dolores ipsum quaerat fugit aperiam ab officia a enim perferendis perspiciatis, ex deserunt omnis expedita? . It is so very frustrating to hear people say that nothing can be done without doing nothing , but people never try to do such thing that actually make changes to the world.";
+// let onlyTwoEighty = myTweet.slice(0,280);
+// console.log(onlyTwoEighty);
+// console.log(onlyTwoEighty.length);
 
+// 🖍️ Substring() methods:It cann't take negative index
+// let str = "Apple , banana, mango";
+// let res = str.substring(9,-5);
+// console.log(res);
+
+// 🖍️Substr() methods 
+// let str = "Apple , banana, mango";
+// let res = str.substr(-5);
+// console.log(res);
+
+// 👉 Replacing string contents:replace() methods replace the data which occurs at the beginning of the string or sentence or paragraph
+let myData = "My team is winning another team";
+let replaceData = myData.replace("team","member");
+console.log(replaceData);
 
