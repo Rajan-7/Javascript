@@ -672,9 +672,35 @@ const { Logger } = require("sass");
 // console.log(str.charCodeAt(lastStr));
 
 // 🕹️ Return the unicode of the last character of the string
-let str = "HELLO WORLD";
-let last = str.length - 1;
-// let last = str.indexOf('D');
-console.log(str.charCodeAt(last));
+// let str = "HELLO WORLD";
+// let last = str.length - 1;
+// // let last = str.indexOf('D');
+// console.log(str.charCodeAt(last));
+
+// 👉 Property access
+// let str = "Ram";
+// console.log(str[0]);
+
+// 👉 toUppercase() & toLowerCase()
+// let myName ="Ram thapa";
+// console.log(myName.toLowerCase());
+// console.log(myName.toUpperCase());
+
+// 👉 concat()
+// let first = "Ram";
+// let last = "Thapa";
+// console.log(`${first} ${last}`);
+// console.log(first.concat(last));
+
+// 👉String.trim()
+// let str = "      Hello       Friends      ";
+// console.log(str.trim());
+
+// 👉Split() method
+// let tr = "a,b,c | d,e";
+// console.log(tr.split(","));
+// console.log(tr.split(" "));
+// console.log(tr.split("|"));
+
 
 
