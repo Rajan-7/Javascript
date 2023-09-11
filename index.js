@@ -656,7 +656,25 @@ const { Logger } = require("sass");
 // console.log(res);
 
 // 👉 Replacing string contents:replace() methods replace the data which occurs at the beginning of the string or sentence or paragraph
-let myData = "My team is winning another team";
-let replaceData = myData.replace("team","member");
-console.log(replaceData);
+// It is case sensative
+// let myData = "My team is winning another team";
+// let replaceData = myData.replace("team","member");
+// console.log(replaceData);
+
+// 👉 Extracting string character
+// 🖍️ charat() method
+// let str = "Hello friends";
+// console.log(str.charAt(2));
+
+// 🖍️ charCodeAt() method
+// let str = "Hello friendS";
+// const lastStr = str.indexOf('S');
+// console.log(str.charCodeAt(lastStr));
+
+// 🕹️ Return the unicode of the last character of the string
+let str = "HELLO WORLD";
+let last = str.length - 1;
+// let last = str.indexOf('D');
+console.log(str.charCodeAt(last));
+
 
