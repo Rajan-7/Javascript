@@ -714,6 +714,22 @@ const { Logger } = require("sass");
 // let date = new Date("Oct 13 2020 11:30:30");
 // console.log(date.toLocaleString());
 
+// let myDate = new Date();
+// console.log(myDate.toLocaleString());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getMonth());
+// console.log(myDate.getDate());
+// console.log(myDate.getDay());
+
+// 👉 Time method 
+let time = new Date();
+console.log(time.getTime());
+console.log(time.getHours());
+console.log(time.getMinutes());
+console.log(time.getSeconds());
+console.log(time.getMilliseconds());
+
+
 
 
 

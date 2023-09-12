@@ -3,9 +3,16 @@ body{
 }
 .Container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color:white;
+}
+.div1{
+    color: rgb(232, 18, 18);
+}
+.div2{
+    color: white;
 }
 p{
     color:green;
