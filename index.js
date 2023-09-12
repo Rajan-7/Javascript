@@ -702,5 +702,18 @@ const { Logger } = require("sass");
 // console.log(tr.split(" "));
 // console.log(tr.split("|"));
 
+// 👨‍🔧👉 Date & Time methods: 1 Jan 1970
+// 👉 Creating Date objects
+// console.log(new Date());
+// let newDate = new Date();
+// console.log(newDate);
+// console.log(new Date().toLocaleString());
+// console.log(Date());
+// console.log(Date.now());
+
+// let date = new Date("Oct 13 2020 11:30:30");
+// console.log(date.toLocaleString());
+
+
 
 
