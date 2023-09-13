@@ -722,12 +722,43 @@ const { Logger } = require("sass");
 // console.log(myDate.getDay());
 
 // 👉 Time method 
-let time = new Date();
-console.log(time.getTime());
-console.log(time.getHours());
-console.log(time.getMinutes());
-console.log(time.getSeconds());
-console.log(time.getMilliseconds());
+// let time = new Date();
+// console.log(time.getTime());
+// console.log(time.getHours());
+// console.log(time.getMinutes());
+// console.log(time.getSeconds());
+// console.log(time.getMilliseconds());
+
+// 🖍️ Challenge Time 
+
+// 👉 Javascript Math object
+// console.log(Math.PI);
+// let value = 10.97489;
+// console.log(Math.round(value));
+// let x = 2 , y= 3;
+// console.log(Math.pow(x,y));
+// let xx = 28;
+// console.log(Math.sqrt(xx));
+// let absValue = -77;
+// console.log(Math.abs(absValue));
+// console.log(Math.abs(-99));
+// console.log(Math.abs(4-6));
+// Math.ceil:return the highest value if it has decimal
+// console.log(Math.ceil(4.1));
+
+// Math.floor
+// console.log(Math.floor(4.1));
+// Math.max(),Math.min()
+// console.log(Math.max(5,6,7,89,77,9));
+// console.log(Math.min(5,6,7,89,77,9));
+
+// Math.random()
+// console.log(Math.floor(Math.random()*10));
+
+// Math.trunc()
+// console.log(Math.trunc(-6.77));
+
+
 
 
 

@@ -8,9 +8,16 @@
   </head>
   <body>
     <div class="Container width height">
-      <button class="div1" onclick="myFunction()">Click</button>
+      <button class="div1" onclick="myFunction()">My Time</button>
       <div class="div2" id="demo"></div>
+      <div class="div2" id="demo1"></div>
+
     </div>
   </body>
-  <script src="main.js"></script>
+  <script >
+    var onlyTime = new Date().toLocaleTimeString();
+    document.getElementById("demo").innerHTML= onlyTime;
+    var onlyDate = new Date().toLocaleDateString();
+    document.getElementById("demo1").innerHTML = onlyDate;
+  </script>
 </html>
