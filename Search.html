@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(4, 20, 20);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      p {
+        color:white;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+      #paraid {
+        color: rgb(214, 26, 26);
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      .btn{
+        color: rgb(7, 84, 11);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello friends</p>
+    <p id="paraid">Content of this windows</p>
+    <button class="btn" onclick="change()">Click</button>
+    <script>
+        const change = () =>{
+            document.getElementById("paraid").innerHTML = "Change is good";
+        }
+    </script>
+  </body>
+</html>

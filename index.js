@@ -526,11 +526,12 @@ const { Logger } = require("sass");
 // 🖍️🖍️ Map & Reduce in Array
 // 👉 Array.map(): returns a new array containing the results of calling functions
 // Map method are chainable i.e it can chain with filter,reduce
-// const arrayNumber = [1,4,9,16,25];
+const arrayNumber = [1,4,9,16,25];
 // Find number which are greater than 9
-// const newArray = arrayNumber.map((curElem,index,arr)=>{
-//    return curElem > 9;
-// })
+const newArray = arrayNumber.map((curElem,index,arr)=>{
+   return curElem > 9;
+})
+console.log(newArray);
 
 // const newArr1 = arrayNumber.map((curE,ind,array)=>{
 //   return curE > 4;
@@ -757,6 +758,12 @@ const { Logger } = require("sass");
 
 // Math.trunc()
 // console.log(Math.trunc(-6.77));
+
+// 👉👉 DOM in javascript(Document object model)
+// alert(location.href);
+// if(confirm("Wnat to visit google?")){
+//     location.href="https://www.youtube.com/watch?v=oiX-6Y2oGjI";
+// }
 
 
 
