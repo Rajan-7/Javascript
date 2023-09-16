@@ -764,10 +764,16 @@ const { Logger } = require("sass");
 // if(confirm("Wnat to visit google?")){
 //     location.href="https://www.youtube.com/watch?v=oiX-6Y2oGjI";
 // }
-var num = 9;
-for(let i = 0 ; i <= 10; i++){
-   console.log(`${num} * ${i} = ${num * i}`);
-}
+// var num = 9;
+// for(let i = 0 ; i <= 10; i++){
+//    console.log(`${num} * ${i} = ${num * i}`);
+// }
+
+var arr = [3,4,5,6];
+const sum = arr.reduce((acc,cur)=>{
+   return acc += cur;
+})
+console.log(sum);
 
 
 
