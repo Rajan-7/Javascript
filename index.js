@@ -769,11 +769,19 @@ const { Logger } = require("sass");
 //    console.log(`${num} * ${i} = ${num * i}`);
 // }
 
-var arr = [3,4,5,6];
-const sum = arr.reduce((acc,cur)=>{
-   return acc += cur;
+// var arr = [3,4,5,6];
+// const sum = arr.reduce((acc,cur)=>{
+//    return acc += cur;
+// })
+// console.log(sum);
+
+const arar = [4,5,6,7,9];
+const res = arar.filter((cur)=>{
+    return cur > 6;
+}).reduce((acc,cur)=>{
+    return acc += cur;
 })
-console.log(sum);
+console.log(res);
 
 
 
