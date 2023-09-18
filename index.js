@@ -775,13 +775,26 @@ const { Logger } = require("sass");
 // })
 // console.log(sum);
 
-const arar = [4,5,6,7,9];
-const res = arar.filter((cur)=>{
-    return cur > 6;
-}).reduce((acc,cur)=>{
-    return acc += cur;
-})
-console.log(res);
+// const arar = [4,5,6,7,9];
+// const res = arar.filter((cur)=>{
+//     return cur > 6;
+// }).reduce((acc,cur)=>{
+//     return acc += cur;
+// })
+// console.log(res);
+
+// let nn = Number.NEGATIVE_INFINITY
+// console.log(nn);
+
+function max(mm){
+    let nn = Number.NEGATIVE_INFINITY;
+    for(let n of mm){
+        if(n > nn){
+        //   
+        }
+    }
+    return nn
+}
 
 
 
