@@ -786,14 +786,37 @@ const { Logger } = require("sass");
 // let nn = Number.NEGATIVE_INFINITY
 // console.log(nn);
 
-function max(mm){
-    let nn = Number.NEGATIVE_INFINITY;
-    for(let n of mm){
-        if(n > nn){
-        //   
-        }
+// function max(mm){
+//     let nn = Number.NEGATIVE_INFINITY;
+//     for(let n of mm){
+//         if(n > nn){
+//            nn = n; 
+//         }
+//     }
+//     return nn
+// }
+// console.log(max([4,5,6,7,8,9]));
+
+
+// Find the index of "s" in sentence The snake is big
+let str = "The snake is big";
+console.log(str.indexOf("s"));
+
+// Search whether the word "fox" is in the sentence
+let str1 = "The quick brown fox jump over the lazy dog";
+const words = str1.split(" ");
+// console.log(str1.split(" "));
+let found = false;
+for(let word of words){
+    if(word === "fox"){
+        found = true;
+        break;
     }
-    return nn
+}
+if(found){
+    console.log("Yes the word fox is present");
+}else{
+    console.log("No the word is not present");
 }
 
 
