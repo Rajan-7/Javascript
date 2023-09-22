@@ -799,27 +799,114 @@ const { Logger } = require("sass");
 
 
 // Find the index of "s" in sentence The snake is big
-let str = "The snake is big";
-console.log(str.indexOf("s"));
+// let str = "The snake is big";
+// console.log(str.indexOf("s"));
 
 // Search whether the word "fox" is in the sentence
-let str1 = "The quick brown fox jump over the lazy dog";
-const words = str1.split(" ");
+// let str1 = "The quick brown fox jump over the lazy dog";
+// const words = str1.split(" ");
 // console.log(str1.split(" "));
-let found = false;
-for(let word of words){
-    if(word === "fox"){
-        found = true;
-        break;
+// let found = false;
+// for(let word of words){
+//     if(word === "fox"){
+//         found = true;
+//         break;
+//     }
+// }
+// if(found){
+//     console.log("Yes the word fox is present");
+// }else{
+//     console.log("No the word is not present");
+// }
+
+// 👉👉EVENTS in javascript
+// 4 ways of writing EVENTS in javascript
+// i. inline event use like onclick="alert()"
+// ii. by calling a function like onclick = "myEventFunction()"
+// iii. using DOM properties or by using reference
+// iv. using addEventListener(type,callbackFunction) : event can be use multiple times
+
+// KeyBoardEvent , MouseEvent, InputEvent
+
+// 👉👉 TIMING events in javascript
+// １SetTimeout(): setTimeout(function,milliseconds)
+// 𝟐 SetInterval(): setInterval(function,milliseconds)
+// 𝟹 clearInterval():clearInterval(ref) -> here ref is reference of setInterval
+// 𝟺 clearTimeout():clearTimeout(ref) -> here ref is reference of setTimeout
+
+// 👉OOP in javascript
+// 👉Object literals
+// Creating an object
+// 𝟷 way
+// let obj ={
+//     name:"ram",
+//     address:"ktm",
+//     number:98567,
+//     level:"bachelor",
+//     age:49,
+//     getData:function(){
+//         console.log(`My name is ${obj.name}`);
+//     }
+// }
+// obj.getData();
+
+// 𝟸 Way
+// let obj ={
+//     name:"ram",
+//     address:"ktm",
+//     number:98567,
+//     level:"bachelor",
+//     age:49,
+//     getData(){
+//         console.log(`My name is ${obj.name}`);
+//     }
+// }
+// obj.getData();
+
+// 𝟛 Creating object inside object
+// let obj ={
+//     name:{
+//         firstName:"Jhon",
+//         lastName:"wick"
+//     },
+//     address:"ktm",
+//     number:98567,
+//     level:"bachelor",
+//     age:49,
+//     getData:function(){
+//         console.log(`My name is ${obj.name}`);
+//     }
+// }
+// console.log(obj.name.lastName);
+
+// 👉WHAT IS this object?
+// Ex 𝟷
+// console.log(this.alert("Awww"));
+
+// Ex 𝟸
+// var name1 = "Jhon";
+// function myName(){
+//     console.log(this.name1);
+// }
+// myName();
+
+//Ex 𝟹
+// let obj ={
+//     name:"roman",
+//     getName(){
+//         console.l𝟹og(this.name);
+//     }
+// }
+// obj.getName();
+
+//Ex 𝟺
+let obj ={
+    name:"roman",
+    getName:()=>{
+        console.log(this);
     }
 }
-if(found){
-    console.log("Yes the word fox is present");
-}else{
-    console.log("No the word is not present");
-}
-
-
+obj.getName();
 
 
 
