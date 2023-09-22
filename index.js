@@ -651,7 +651,7 @@ const { Logger } = require("sass");
 // let res = str.substring(9,-5);
 // console.log(res);
 
-// 🖍️Substr() methods 
+// 🖍️Substr() methods
 // let str = "Apple , banana, mango";
 // let res = str.substr(-5);
 // console.log(res);
@@ -722,7 +722,7 @@ const { Logger } = require("sass");
 // console.log(myDate.getDate());
 // console.log(myDate.getDay());
 
-// 👉 Time method 
+// 👉 Time method
 // let time = new Date();
 // console.log(time.getTime());
 // console.log(time.getHours());
@@ -730,7 +730,7 @@ const { Logger } = require("sass");
 // console.log(time.getSeconds());
 // console.log(time.getMilliseconds());
 
-// 🖍️ Challenge Time 
+// 🖍️ Challenge Time
 
 // 👉 Javascript Math object
 // console.log(Math.PI);
@@ -790,13 +790,12 @@ const { Logger } = require("sass");
 //     let nn = Number.NEGATIVE_INFINITY;
 //     for(let n of mm){
 //         if(n > nn){
-//            nn = n; 
+//            nn = n;
 //         }
 //     }
 //     return nn
 // }
 // console.log(max([4,5,6,7,8,9]));
-
 
 // Find the index of "s" in sentence The snake is big
 // let str = "The snake is big";
@@ -900,15 +899,26 @@ const { Logger } = require("sass");
 // obj.getName();
 
 //Ex 𝟺
-let obj ={
-    name:"roman",
-    getName:()=>{
-        console.log(this);
-    }
-}
-obj.getName();
+// let obj ={
+//     name:"roman",
+//     getName:()=>{
+//         console.log(this);
+//     }
+// }
+// obj.getName();
 
-
-
-
-
+// Ex 𝟻
+// let obj = {
+//   name: {
+//     firstName: "Jhon",
+//     lastName: "wick",
+//   },
+//   address: "ktm",
+//   number: 98567,
+//   level: "bachelor",
+//   age: 49,
+//   getData: function () {
+//     console.log(`My name is ${this.name.firstName}`);
+//   },
+// };
+// obj.getData();
