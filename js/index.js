@@ -922,3 +922,23 @@ const { Logger } = require("sass");
 //   },
 // };
 // obj.getData();
+
+// 👉👉 Destructuring in javascript
+
+// ➡️➡️ Array Destructuring
+// const bio = ['roman','wick',19];
+// // Position should be exactly as same as actual array
+// let [Fname,Lname,age]=bio;
+// console.log(Lname);
+
+// ➡👉 Object destructuring
+// let bigData = {
+//   fname: "jhon",
+//   lname:"wick",
+//   age:19
+// };
+// variable name should be same as actual object variable name
+// let {fname,lname,age}=bigData;
+// console.log(fname);
+
+// 👉Object properties💢
