@@ -959,3 +959,19 @@ const { Logger } = require("sass");
 // }
 // console.log(bio);
 
+// 👉🖍️ SPREAD operator / spread operator
+// const animal = ['dog','cat','rabbit'];
+// const newAnimal = [...animal,'cow','tiger','lion'];
+// console.log(newAnimal);
+
+
+// 🖍️ES7 
+// １. array.includes(): return boolean result i.e true if present else false
+// const animal = ['dog','cat','rabbit'];
+// const isAvailable = animal.includes('dog');
+// console.log(isAvailable);
+
+// 𝟸. Exponential operator
+// console.log(2 ** 2);g
+
+
