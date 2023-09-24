@@ -965,7 +965,7 @@ const { Logger } = require("sass");
 // console.log(newAnimal);
 
 
-// 🖍️ES7 
+// 🖍️ES7 (2016)
 // １. array.includes(): return boolean result i.e true if present else false
 // const animal = ['dog','cat','rabbit'];
 // const isAvailable = animal.includes('dog');
@@ -974,4 +974,15 @@ const { Logger } = require("sass");
 // 𝟸. Exponential operator
 // console.log(2 ** 2);g
 
+//🖍️ES8
+// 𝟷 padStart() & padEnd()
+// const msg = "Hello";
+// console.log(msg);
+// console.log(msg.padStart(7));
+// console.log(msg.padEnd(7));
+
+//𝟸 object.values & object.entries:Both storre values into arrays
+// const obj ={name:"Roman",age:19};
+// console.log(Object.values(obj));
+// console.log(Object.entries(obj));
 
