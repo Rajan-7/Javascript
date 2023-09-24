@@ -942,3 +942,20 @@ const { Logger } = require("sass");
 // console.log(fname);
 
 // 👉Object properties💢
+// Dynamic data
+// let name = "Roman";
+// let obj={
+//     [name]:"You're king",
+//     [26-7]:"age"
+// }
+// console.log(obj);
+
+// No need to write key & values if they are same
+// let name = "Jack";
+// let age = 19;
+// const bio={
+//     name:name,
+//     age:age
+// }
+// console.log(bio);
+
