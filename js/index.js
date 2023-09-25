@@ -1,6 +1,5 @@
 // console.log("hello friends");
 
-const { Logger } = require("sass");
 
 // values & variables
 // var 1myNmae= "ahri";
@@ -985,4 +984,46 @@ const { Logger } = require("sass");
 // const obj ={name:"Roman",age:19};
 // console.log(Object.values(obj));
 // console.log(Object.entries(obj));
+
+// REST operator : return rest of the values of corresponding obj,string or array
+// const arr = ['ram','hari','jack','roman','eags'];
+//  [first,second,...others]=arr;
+//  console.log(first);
+//  console.log(second);
+//  console.log(others);
+
+// 🖍️ES2018
+// const person = {name:"ram",age:18,degree:"MCA"};
+// const newPerson = {...person};
+// console.log(newPerson);
+
+// 🖍️ES2019
+//👉 flat() method/prototype
+// const array = [
+//   ["arr", "arr2"],
+//   ["arr3", "arr4"],
+//   ["arr5", "arr6",["ram","hari"]],
+// ];
+// const flatArray = array.reduce((acc,cE)=>{
+//   return acc.concat(cE);
+// })
+// console.log(array.flat(2));
+
+//👉 fromEntries() method : return the original vlaues of the object
+// const oj = {name:"a",age:49};
+// const obE = Object.entries(oj);
+// console.log(obE);
+// console.log(Object.fromEntries(obE));
+
+// 🖍️ES2020
+// １ BigInt
+// let maxNum = Number.MAX_SAFE_INTEGER;
+// console.log(maxNum);
+// const numNum = 9007199254740991n + 12n;
+// console.log(typeof(numNum));
+
+"use strict";
+x= 2.3;
+console.log(x);
+
 
