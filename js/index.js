@@ -1030,6 +1030,23 @@
 // 1.Event propagation , event bubbling & event capturing 
 // Event capturing : Top-bottom approach 
 // Event bubbling: Botton-top approach
-// Cature phase , 
+// Cature phase
+
+
+// １HIgher order function : such kind of function which accepts other fucntions as its arguments is HOF
+// 𝟸 Callback function : such function which acts as an arguments in another functions is CF
+
+// Below calc is the HOF & add,sub are the CF
+// const add = (a,b)=>{
+//     return a+b;
+// }
+// const sub = (a,b)=>{
+//     return Math.abs(a-b);
+// }
+// const calc = (num1,num2,func)=>{
+//     return func(num1,num2);
+// }
+// console.log(calc(5,3,add));
+
 
 
