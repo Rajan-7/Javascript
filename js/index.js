@@ -1022,8 +1022,14 @@
 // const numNum = 9007199254740991n + 12n;
 // console.log(typeof(numNum));
 
-"use strict";
-x= 2.3;
-console.log(x);
+// "use strict";
+// x= 2.3;
+// console.log(x);
+
+// 🖍️👉ADVANCE JAVASCRIPT
+// 1.Event propagation , event bubbling & event capturing 
+// Event capturing : Top-bottom approach 
+// Event bubbling: Botton-top approach
+// Cature phase , 
 
 
