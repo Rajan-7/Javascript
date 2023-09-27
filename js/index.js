@@ -1048,5 +1048,89 @@
 // }
 // console.log(calc(5,3,add));
 
+// 👉🖍️ ASYNCHRONOUS JAVASCRIPT
+// 👉Hoisting in Javascript : Hoisting is a mechanisms in javascript where variable & function declaration
+// are moved to the top of their scope before code execution
+
+// Example
+// console.log(name);
+// var name;
+// name="ram";
+
+// 👉Scope chain & lexical scoping in Javascript
+// Scope chain
+// var name ="Ram";
+
+// Lexical scoping : Inner scope get access to the variable of their parent scope but vice-versa not true
+
+// １ Example of lexical scoping
+// let a = "Hello ";
+// const parent =()=>{
+//     let b = "Hi ";
+//     const child=()=>{
+//         let c = "Namaste ";
+//         console.log(a+b+c);
+//     }
+//     child();
+//     console.log(a+c);
+// }
+// parent();
+
+// 👉 Closure in javascript : It is created everytime functions is created 
+// １ Example
+// const outerFun =(a)=>{
+//     let b = 6;
+//     const innerFun = ()=>{
+//         let sum = a + b;
+//         console.log(`Sum of ${a} and ${b} is ${sum}`);
+//     }
+//     innerFun();
+// }
+// outerFun(10);
+
+// 𝟸 Another example
+// const outerFun =(a)=>{
+//     let b = 6;
+//     const innerFun = ()=>{
+//         let sum = a + b;
+//         console.log(`Sum of ${a} and ${b} is ${sum}`);
+//     }
+//     return innerFun;
+// }
+// const CheckClosure = outerFun(10);
+// console.log(CheckClosure);
+
+// 👉 Strict mode 
+// "use strict"
+// let x = "name";
+// console.log(x);
+
+// 🖍️Synchronous js programming : One execution most complete before heading another execution
+// 🖍️Asynchronous js programming : parallel execution
+// 🖍️ Synchronous vs Asynchronous javascript
+// １ Synchronous 
+// const funcOne = ()=>{
+//     console.log("One function is called");
+// }
+// const funcTwo = () =>{
+//     console.log("Two function is called");
+//     funcOne();
+//     console.log("Again Two is called");
+// }
+// funcTwo();
+
+// 𝟸 Asynchronous
+const funcOne = ()=>{
+    setTimeout(()=>{
+        console.log("One function is called");
+    },2000);
+}
+const funcTwo = () =>{
+    console.log("Two function is called");
+    funcOne();
+    console.log("Again Two is called");
+}
+funcTwo();
+
 
 
