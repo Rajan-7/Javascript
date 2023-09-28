@@ -1120,17 +1120,60 @@
 // funcTwo();
 
 // 𝟸 Asynchronous
-const funcOne = ()=>{
-    setTimeout(()=>{
-        console.log("One function is called");
-    },2000);
-}
-const funcTwo = () =>{
-    console.log("Two function is called");
-    funcOne();
-    console.log("Again Two is called");
-}
-funcTwo();
+// Data of setTimeout is sent to Web API 
+// const funcOne = ()=>{
+//     setTimeout(()=>{
+//         console.log("One function is called");
+//     },2000);
+// }
+// const funcTwo = () =>{
+//     console.log("Two function is called");
+//     funcOne();
+//     console.log("Again Two is called");
+// }
+// funcTwo();
+
+// 🖍️ Event loop 
+// 1. Execution context : When calling function , they get their execution context
+// 2. Message queue : After the time in setTimeout is complete,it send its data to MQ
+// 3. WEB api : callback 3000
+
+// 👉 Function currying
+// It doesn't take multiple but takes the first one & return a new functions until 
+// function sum(n1){
+//     // console.log(n1);
+//     return function(n2){
+//         // console.log(n1,n2);
+//         return function(n3){
+//             console.log(n1+n2+n3);
+//         }
+//     }
+// }
+// sum(2)(3)(4);
+
+// In one line
+// const sum = (n1)=>(n2)=>(n3)=>console.log(n1+n2+n3);
+// sum(2)(3)(4);
+
+// 👉Callback hell
+// setTimeout(()=>{
+//     console.log("Work 1");
+//     setTimeout(()=>{
+//         console.log("Work 2");
+//         setTimeout(()=>{
+//             console.log("Work 3");
+//             setTimeout(()=>{
+//                 console.log("Work 4");
+//                 setTimeout(()=>{
+//                     console.log("Work 5");
+//                     setTimeout(()=>{
+//                         console.log("Work 6");
+//                     },1000);
+//                 },1000);
+//             },1000);
+//         },1000);
+//     },1000);
+// },1000);
 
 
 
