@@ -1,5 +1,9 @@
 // console.log("hello friends");
 
+const { rejects } = require("assert");
+const { error } = require("console");
+const { resolve } = require("path");
+
 
 // values & variables
 // var 1myNmae= "ahri";
@@ -1176,4 +1180,30 @@
 // },1000);
 
 
+// Event loop example
+
+// const fun2 = ()=>{
+//     setTimeout(()=>{
+//         console.log("IM 2");
+//     },2000);
+// }
+
+// const fun1 =()=>{
+//     console.log("IM 1");
+//     fun2();
+//     console.log("IM AGAIN 1");
+// }
+// fun1();
+
+// Promise in js
+// const promiseData = new Promise((resolve,rejects)=>{
+//     const data = {message:"Data fetch successfully"};
+//     resolve(data);
+//     rejects(new Error("Failed to fetch data"));
+// })
+// promiseData.then((res)=>{
+//     console.log(res.message);
+// }).catch((error)=>{
+//     console.log(error);
+// })
 
