@@ -1207,3 +1207,23 @@ const { resolve } = require("path");
 //     console.log(error);
 // })
 
+// Promise in js
+// const promiseSet = new Promise((resolve,rejects)=>{
+//     setTimeout(()=>{
+//         resolve("This is way of creating promise");
+//         // rejects(new Error("Fail to make promise"));
+//     },2000)
+// })
+// promiseSet.then((res)=>{
+//     console.log(res);
+// }).catch((error)=>{
+//     console.error(error.message);
+// })
+
+// Simple event loop
+// console.log("First time");
+// setTimeout(()=>{
+//     console.log("Event");
+// },2000);
+// console.log("Second time");
+
