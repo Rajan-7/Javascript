@@ -32,6 +32,9 @@
         <div id="child"></div>
     </div>
 </body>
+<!-- Bubbling & capturing -->
+<!-- Bubbling : bottom up  -->
+<!-- Capturing: top down -->
 <script>
     const getParent = document.getElementById("parent");
     const getChild = document.getElementById("child");
@@ -45,7 +48,7 @@
         //event.stopPropagation();
     }
     //addEventListener()
-    getParent.addEventListener("click",showParent,true);
-    getChild.addEventListener("click",showChild,true);
+    getParent.addEventListener("click",showParent);
+    getChild.addEventListener("click",showChild);
 </script>
 </html>

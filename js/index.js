@@ -1,8 +1,6 @@
 // console.log("hello friends");
 
-const { rejects } = require("assert");
-const { error } = require("console");
-const { resolve } = require("path");
+
 
 
 // values & variables
@@ -1227,3 +1225,15 @@ const { resolve } = require("path");
 // },2000);
 // console.log("Second time");
 
+// Function currying
+// const sum=(a)=>{
+//    return function(b){
+//     return function(c){
+//        console.log(a,b,c);
+//     }
+//    }
+// }
+// sum(4)(5)(4);
+
+// const func = (a)=>(b)=>(c)=>console.log(a+b+c);
+// func(7)(8)(9);
