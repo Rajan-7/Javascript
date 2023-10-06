@@ -1237,3 +1237,10 @@
 
 // const func = (a)=>(b)=>(c)=>console.log(a+b+c);
 // func(7)(8)(9);
+
+
+// null vs undefined
+let him;
+let sum=null;
+console.log(sum);
+console.log(him);
