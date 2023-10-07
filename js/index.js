@@ -1,8 +1,5 @@
 // console.log("hello friends");
 
-
-
-
 // values & variables
 // var 1myNmae= "ahri";
 // var _myMother = "God";
@@ -486,6 +483,7 @@
 // console.log(arrayOfString);
 
 // 🕹️ Challenge Time
+// splice(start,deleteindex,items)
 // Challenge 1:Add dec at the end of an array
 // const months = ['jan','march','april','june','july'];
 // const returnType = months.splice(months.length,0,'Dec');
@@ -965,7 +963,6 @@
 // const newAnimal = [...animal,'cow','tiger','lion'];
 // console.log(newAnimal);
 
-
 // 🖍️ES7 (2016)
 // １. array.includes(): return boolean result i.e true if present else false
 // const animal = ['dog','cat','rabbit'];
@@ -1029,11 +1026,10 @@
 // console.log(x);
 
 // 🖍️👉ADVANCE JAVASCRIPT
-// 1.Event propagation , event bubbling & event capturing 
-// Event capturing : Top-bottom approach 
+// 1.Event propagation , event bubbling & event capturing
+// Event capturing : Top-bottom approach
 // Event bubbling: Botton-top approach
 // Cature phase
-
 
 // １HIgher order function : such kind of function which accepts other fucntions as its arguments is HOF
 // 𝟸 Callback function : such function which acts as an arguments in another functions is CF
@@ -1078,7 +1074,7 @@
 // }
 // parent();
 
-// 👉 Closure in javascript : It is created everytime functions is created 
+// 👉 Closure in javascript : It is created everytime functions is created
 // １ Example
 // const outerFun =(a)=>{
 //     let b = 6;
@@ -1102,7 +1098,7 @@
 // const CheckClosure = outerFun(10);
 // console.log(CheckClosure);
 
-// 👉 Strict mode 
+// 👉 Strict mode
 // "use strict"
 // let x = "name";
 // console.log(x);
@@ -1110,7 +1106,7 @@
 // 🖍️Synchronous js programming : One execution most complete before heading another execution
 // 🖍️Asynchronous js programming : parallel execution
 // 🖍️ Synchronous vs Asynchronous javascript
-// １ Synchronous 
+// １ Synchronous
 // const funcOne = ()=>{
 //     console.log("One function is called");
 // }
@@ -1122,7 +1118,7 @@
 // funcTwo();
 
 // 𝟸 Asynchronous
-// Data of setTimeout is sent to Web API 
+// Data of setTimeout is sent to Web API
 // const funcOne = ()=>{
 //     setTimeout(()=>{
 //         console.log("One function is called");
@@ -1135,13 +1131,13 @@
 // }
 // funcTwo();
 
-// 🖍️ Event loop 
+// 🖍️ Event loop
 // 1. Execution context : When calling function , they get their execution context
 // 2. Message queue : After the time in setTimeout is complete,it send its data to MQ
 // 3. WEB api : callback 3000
 
 // 👉 Function currying
-// It doesn't take multiple but takes the first one & return a new functions until 
+// It doesn't take multiple but takes the first one & return a new functions until
 // function sum(n1){
 //     // console.log(n1);
 //     return function(n2){
@@ -1176,7 +1172,6 @@
 //         },1000);
 //     },1000);
 // },1000);
-
 
 // Event loop example
 
@@ -1238,9 +1233,24 @@
 // const func = (a)=>(b)=>(c)=>console.log(a+b+c);
 // func(7)(8)(9);
 
-
 // null vs undefined
-let him;
-let sum=null;
-console.log(sum);
-console.log(him);
+// let him;
+// let sum=null;
+// console.log(sum);
+// console.log(him);
+
+
+// Map
+// const arr = [3, 4, 5, 6, 7, 9];
+// const sum = arr.map((cur,ind) => {
+//     return cur*2
+// }).filter((cur)=>{
+//     return cur > 10
+// });
+// console.log(sum);
+
+// const arr = [3, 4, 5, 6, 7, 9];
+// const res = arr.map((cur)=>{
+//     return cur > 5
+// })
+// console.log(res);
