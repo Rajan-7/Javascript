@@ -1254,3 +1254,14 @@
 //     return cur > 5
 // })
 // console.log(res);
+
+// 👉🖍️ JSON : javascript object notation
+// 👉 JSON.Stringify: convert javascript object into JSON text & store that text in string
+const obj = {key1:"hari",key2:true,Key3:5};
+const toJson = JSON.stringify(obj);
+console.log(toJson);
+
+// 👉JSON.parse() :convert JSON text into normal js object
+const jsonObj = '{"key1":"hari","key2":true,"key3":5}';
+const toNorObj = JSON.parse(jsonObj);
+console.log(toNorObj);
