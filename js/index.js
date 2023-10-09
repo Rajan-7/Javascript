@@ -1265,3 +1265,5 @@ console.log(toJson);
 const jsonObj = '{"key1":"hari","key2":true,"key3":5}';
 const toNorObj = JSON.parse(jsonObj);
 console.log(toNorObj);
+
+// ES8 :async await
