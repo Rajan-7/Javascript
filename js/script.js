@@ -1,29 +1,50 @@
-{/* <div id="joke" class="joke color">Here is one for you...</div>
-<button id="jokeBtn" class="btn color">Hit Me😂</button> */}
+{
+  /* <div id="joke" class="joke color">Here is one for you...</div>
+<button id="jokeBtn" class="btn color">Hit Me😂</button> */
+}
 
 // PROMISES : either resolve or reject, these are the two value that is return by promise
 // fetch()
 // GET https://icanhazdadjoke.com/
 
-const jokes = document.querySelector('#joke');
+const jokes = document.querySelector("#joke");
 const jokeBtn = document.querySelector("#jokeBtn");
 
-const generateJoke=()=>{
+// const generateJoke=()=>{
 
-    const setHeader={
-         headers:{
-            Accept:"application/json"
-        }
+//     const setHeader={
+//          headers:{
+//             Accept:"application/json"
+//         }
+//     }
+//     fetch("https://icanhazdadjoke.com/",setHeader)
+//     .then((res)=>res.json())
+//     .then((data)=>{
+//         jokes.innerHTML=data.joke;
+//     })
+//     .catch((err)=>{
+//         throw err;
+//     })
+// }
+
+// jokeBtn.addEventListener('click',generateJoke);
+// generateJoke();
+
+const generateJoke = async () => {
+    try {
+        const setHeader = {
+            headers: {
+              Accept: "application/json",
+            },
+          };
+          const res = await fetch("https://icanhazdadjoke.com/", setHeader);
+          const data = await res.json();
+          jokes.innerHTML=data.joke;
+    } catch (error) {
+        throw error;
     }
-    fetch("https://icanhazdadjoke.com/",setHeader)
-    .then((res)=>res.json())
-    .then((data)=>{
-        jokes.innerHTML=data.joke;
-    })
-    .catch((err)=>{
-        throw err;
-    })
-}
+  
+};
 
-jokeBtn.addEventListener('click',generateJoke);
+jokeBtn.addEventListener("click", generateJoke);
 generateJoke();
