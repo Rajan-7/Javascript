@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@400;500;700&display=swap');
 *,*::after,*::before{
-    /* background-color: black; */
+    background-color: black;
     box-sizing: border-box;
     font-family: 'Anton';
 }
@@ -18,7 +18,7 @@
 }
 .main-heading{
     padding: 30px;
-    /* color: white; */
+    color: white;
     text-shadow: 0 1px 8px rgba(255, 255, 255, 0.5);
     font-size: 190px;
 }
