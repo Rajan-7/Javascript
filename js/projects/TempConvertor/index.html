@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Convertor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="tempCal" onsubmit="generateTemp(); return false">
+      <label for="value">Enter a value you want to convert:</label>
+      <br />
+      <input type="number" name="value" id="value" />
+      <select name="tempValue" id="tempValue">
+        <option value="cel">&deg;Celsius</option>
+        <option value="fah">&deg;Fahrenheit</option>
+      </select>
+      <br />
+      <input type="submit" name="value" /><br />
+      <span id="result"></span>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
