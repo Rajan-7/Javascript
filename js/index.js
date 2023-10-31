@@ -1204,7 +1204,7 @@
 // const promiseSet = new Promise((resolve,rejects)=>{
 //     setTimeout(()=>{
 //         resolve("This is way of creating promise");
-//         // rejects(new Error("Fail to make promise"));
+// rejects(new Error("Fail to make promise"));
 //     },2000)
 // })
 // promiseSet.then((res)=>{
@@ -1239,7 +1239,6 @@
 // console.log(sum);
 // console.log(him);
 
-
 // Map
 // const arr = [3, 4, 5, 6, 7, 9];
 // const sum = arr.map((cur,ind) => {
@@ -1257,13 +1256,140 @@
 
 // 👉🖍️ JSON : javascript object notation
 // 👉 JSON.Stringify: convert javascript object into JSON text & store that text in string
-const obj = {key1:"hari",key2:true,Key3:5};
-const toJson = JSON.stringify(obj);
-console.log(toJson);
+// const obj = {key1:"hari",key2:true,Key3:5};
+// const toJson = JSON.stringify(obj);
+// console.log(toJson);
 
 // 👉JSON.parse() :convert JSON text into normal js object
-const jsonObj = '{"key1":"hari","key2":true,"key3":5}';
-const toNorObj = JSON.parse(jsonObj);
-console.log(toNorObj);
+// const jsonObj = '{"key1":"hari","key2":true,"key3":5}';
+// const toNorObj = JSON.parse(jsonObj);
+// console.log(toNorObj);
 
 // ES8 :async await
+
+// function currying
+
+// const addNumberThree = (n1) => {
+//   return function (n2) {
+//     return function (n3) {
+//       console.log(n1 + n2 + n3);
+//     };
+//   };
+// };
+
+// addNumberThree(4)(5)(6);
+
+// const sum=(n1)=>(n2)=>(n3)=>(console.log(n1+n2+n3));
+// sum(6)(7)(7);
+
+// simple event loop
+// console.log("First time");
+// setTimeout(()=>{
+//   console.log("Am I the loop ?");
+// },2000);
+// console.log("Second time?");
+
+// promise in js
+// const promiseJs = new Promise((resolve,rejects)=>{
+//   const data = {message:"Promise fulfilled successfully"};
+//   resolve(data);
+//   rejects(new Error("Fail to fulfilled the promise"))
+// })
+// promiseJs.then((res)=>{
+//   console.log(res.message);
+// }).catch((err)=>{
+//   console.log(err);
+// })
+
+// const newPromise = new Promise((resolve, rejects) => {
+//   setTimeout(() => {
+//     const data = { messag: "Hello new way!!" };
+//     resolve(data);
+//     rejects(new Error("This is hard to keep promise"));
+//   }, 2000);
+// });
+// newPromise
+//   .then((res) => {
+//     console.log(res.messag);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// ? CallBack Hell
+
+// setTimeout(() => {
+//   console.log("1");
+//   setTimeout(() => {
+//     console.log("2");
+//     setTimeout(() => {
+//       console.log("3");
+//       setTimeout(() => {
+//         console.log("4");
+//         setTimeout(() => {
+//           console.log("5");
+//         }, 5000);
+//       }, 4000);
+//     }, 3000);
+//   }, 2000);
+// }, 1000);
+
+// * Synchronous vs Asynchronous JS in simple example
+
+// sync
+// const funOne = ()=>{
+//   console.log("IM function one");
+// }
+
+// const funTwo = ()=>{
+//   console.log("Im function two ");
+//   funOne();
+//   console.log("Again function two");
+// }
+// funTwo();
+
+// Async
+// const AsynOne = ()=>{
+//   setTimeout(()=>{
+//     console.log("Async one");
+//   },2000)
+// }
+
+// const AsynTwo = () =>{
+//   console.log("Async ONe");
+//   AsynOne();
+//   console.log("I wanna go first");
+// }
+
+// AsynTwo()
+
+// console.log("A"-6);
+// let n;
+// let n1 = null;
+// console.log(n);
+// console.log(n1);
+
+// ! Map
+
+// const arr = ["Ram","Hari","Eagle","Helmepo"];
+// const result = arr.map((curElm)=>{
+//   return curElm
+// })
+// console.log(result);
+
+// * for in loop return the index number of the array datas
+// for(let elem in arr){
+//   console.log(elem);
+// }
+
+// * for of loop return the values of the array datas
+
+// for(let el of arr){
+//   console.log(el);
+// }
+
+console.log("Multiple of 8");
+let n = 8;
+for (let i = 1; i<=10;i++){
+  console.log(`${n} * ${i} = ${n*i}`);
+}
