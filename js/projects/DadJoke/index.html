@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <title>JOke</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #080202;
+        font-family: "Anton";
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        width: 60%;
+        border-radius: 2.5rem;
+        background-color: #b88f37;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+      .btn {
+        border: none;
+        border-radius: 5px;
+        border: 1px solid rgb(177, 207, 55);
+        background: #d2de32;
+        font-size: 1.2rem;
+
+        &:hover {
+          background-color: #b88f37;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="joke-heading">Dad Jokes 😂✌️</h1>
+      <div class="display" id="display"></div>
+      <button class="btn" id="btn">Next ?</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
