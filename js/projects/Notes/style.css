@@ -52,6 +52,7 @@ button {
   vertical-align: middle;
   font-size: inherit;
   font-family: inherit;
+  background-color: #f4f7f8;
 }
 button.learn-more {
   width: 12rem;
@@ -142,6 +143,8 @@ button:hover .button-text {
   font-size: 1rem;
   margin-left: 0.5rem;
 }
+
+
 
 .note textarea {
   outline: none;

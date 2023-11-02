@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Poppins:wght@100&family=Rubik:wght@400;500;700&family=Urbanist:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f7f8;
+}
+
+.title {
+  background-color: #f4e869;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  & .heading {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+  }
+}
+
+.btn-class {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+  & .btn {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #f2f7a1;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}
+
+.note {
+  /* display: flex;
+  flex-direction: column; */
+  height: 200px;
+  width: 400px;
+  margin: 40px 20px;
+  background-color: #fff;
+  box-shadow: inset rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  overflow: scroll;
+
+  & .option {
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+
+    & .edit {
+      height: 30px;
+      width: 30px;
+      color: #fff;
+      border: none;
+      background-color: #1b6964;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+      &:hover {
+        color: #1b6964;
+        background-color: #fff;
+      }
+    }
+
+    & .delete {
+      margin-left: 3px;
+      height: 30px;
+      width: 30px;
+      color: #fff;
+      background-color: #fe0000;
+      border: none;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+      &:hover {
+        color: #fe0000;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .main {
+    padding: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+textarea {
+  font-size: 1.2rem;
+  padding: 20px;
+  outline: none;
+  height: 200px;
+  width: 100%;
+  border-color: transparent;
+  border: none;
+}
+
+/* <div class="notes">
+      <div class="option">
+        <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+      </div>
+      <div class="main"></div>
+      <textarea class=""></textarea>
+    </div> */
