@@ -1388,8 +1388,24 @@
 //   console.log(el);
 // }
 
-console.log("Multiple of 8");
-let n = 8;
-for (let i = 1; i<=10;i++){
-  console.log(`${n} * ${i} = ${n*i}`);
-}
+// console.log("Multiple of 8");
+// let n = 8;
+// for (let i = 1; i<=10;i++){
+//   console.log(`${n} * ${i} = ${n*i}`);
+// }
+
+const array = [
+  ["arr", "arr2"],
+  ["arr3", "arr4"],
+  ["arr5", "arr6",["ram","hari"]],
+];
+const flatArray = array.reduce((acc,cE)=>{
+  return acc.concat(cE);
+})
+console.log(array.flat(2));
+
+const arr = [0,2,3,4,6];
+const sum = arr.reduce((cr,elem)=>{
+  return cr+elem;
+})
+console.log(sum);
