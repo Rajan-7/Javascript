@@ -1,5 +1,6 @@
 // console.log("hello friends");
 
+
 // values & variables
 // var 1myNmae= "ahri";
 // var _myMother = "God";
@@ -1051,9 +1052,9 @@
 // are moved to the top of their scope before code execution
 
 // Example
-// console.log(name);
-// var name;
-// name="ram";
+// console.log(name1);
+// var name1;
+// name1="ram";
 
 // 👉Scope chain & lexical scoping in Javascript
 // Scope chain
@@ -1394,18 +1395,43 @@
 //   console.log(`${n} * ${i} = ${n*i}`);
 // }
 
-const array = [
-  ["arr", "arr2"],
-  ["arr3", "arr4"],
-  ["arr5", "arr6",["ram","hari"]],
-];
-const flatArray = array.reduce((acc,cE)=>{
-  return acc.concat(cE);
-})
-console.log(array.flat(2));
+// const array = [
+//   ["arr", "arr2"],
+//   ["arr3", "arr4"],
+//   ["arr5", "arr6",["ram","hari"]],
+// ];
+// const flatArray = array.reduce((acc,cE)=>{
+//   return acc.concat(cE);
+// })
+// console.log(array.flat(2));
 
-const arr = [0,2,3,4,6];
-const sum = arr.reduce((cr,elem)=>{
-  return cr+elem;
-})
-console.log(sum);
+// const arr = [0,2,3,4,6];
+// const sum = arr.reduce((cr,elem)=>{
+//   return cr+elem;
+// })
+// console.log(sum);
+
+// find method
+// const prices =[200,300,400,500,600,700];
+// const currVal = prices.find((cur)=>cur > 400);
+// console.log(currVal);\
+
+
+// console.log(a);
+// var a ;
+// a = "Hello";
+
+
+const fun1 = ()=>{
+    setTimeout(()=>{
+        console.log("Hello friends");
+    },)
+}
+
+const fun2 = ()=>{
+    console.log("Im 2");
+    fun1();
+    console.log("Again");
+}
+
+fun2();

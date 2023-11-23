@@ -16,7 +16,7 @@ const updateLocalStorage = () => {
 const generateNewNote = (text = "") => {
   const note = document.createElement("div");
   note.classList.add("note");
-  
+
   // html data
   const htmlData = `
     <div class="tools">
