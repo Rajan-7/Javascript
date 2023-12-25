@@ -1,6 +1,5 @@
 // console.log("hello friends");
 
-
 // values & variables
 // var 1myNmae= "ahri";
 // var _myMother = "God";
@@ -31,7 +30,9 @@
 // console.log("Hari"-"Ram");
 // 1 represent true , 0 represent false
 // console.log(true+true);
+// 2
 // console.log(false+false);
+// 0
 // console.log(false-true);
 
 //  null vs undefined
@@ -1416,22 +1417,66 @@
 // const currVal = prices.find((cur)=>cur > 400);
 // console.log(currVal);\
 
-
 // console.log(a);
 // var a ;
 // a = "Hello";
 
+// const fun1 = ()=>{
+//     setTimeout(()=>{
+//         console.log("Hello friends");
+//     },)
+// }
 
-const fun1 = ()=>{
-    setTimeout(()=>{
-        console.log("Hello friends");
-    },)
-}
+// const fun2 = ()=>{
+//     console.log("Im 2");
+//     fun1();
+//     console.log("Again");
+// }
 
-const fun2 = ()=>{
-    console.log("Im 2");
-    fun1();
-    console.log("Again");
-}
+// fun2();
 
-fun2();
+// const fun1 = () => {
+//   setTimeout(() => {
+//     console.log("Im function one");
+//   }, 4000);
+// };
+
+// const fun2 = () => {
+//   console.log(`IM function ${1 + 1}`);
+//   fun1();
+//   console.log("Again 2 Is here");
+// };
+// fun2();
+
+// console.log(7-"eight");
+
+// console.log("s"-"t");
+// let a = 'Hi';
+// const BigFunc = ()=>{
+//     let b = "Hello";
+//     const MidFunc = ()=>{
+//         let c = "Konichiwa";
+//         const SmallFunc = ()=>{
+//             console.log(a+" "+ b+" "+ c);
+//         }
+//         SmallFunc();
+//     }
+//     MidFunc();
+// }
+// BigFunc();
+
+const addNumber = (a) => {
+  let b = 9;
+  const addMidNum = () => {
+    let c = 10;
+    const addLowNum = () => {
+      console.log(a + b + c);
+    };
+    addLowNum();
+  };
+  addMidNum();
+};
+addNumber(20);
+
+const AdderFunc =(n1)=>(n2)=>(n3)=>{console.log(n1+n2+n3)};
+AdderFunc(5)(2)(32);
