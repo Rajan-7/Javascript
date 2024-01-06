@@ -1465,18 +1465,34 @@
 // }
 // BigFunc();
 
-const addNumber = (a) => {
-  let b = 9;
-  const addMidNum = () => {
-    let c = 10;
-    const addLowNum = () => {
-      console.log(a + b + c);
-    };
-    addLowNum();
-  };
-  addMidNum();
-};
-addNumber(20);
+// const addNumber = (a) => {
+//   let b = 9;
+//   const addMidNum = () => {
+//     let c = 10;
+//     const addLowNum = () => {
+//       console.log(a + b + c);
+//     };
+//     addLowNum();
+//   };
+//   addMidNum();
+// };
+// addNumber(20);
 
-const AdderFunc =(n1)=>(n2)=>(n3)=>{console.log(n1+n2+n3)};
-AdderFunc(5)(2)(32);
+
+
+// closure in js
+const func = (a) =>(b)=>(c)=>console.log(a+b+c);
+func(7)(9)(10);
+
+function funA(aa){
+  bb = 7; 
+     function funB(){
+      cc= 8;
+      function funC(){
+         console.log(aa+bb+cc);
+      }
+      funC()
+    }
+    funB()
+}
+funA(7)
