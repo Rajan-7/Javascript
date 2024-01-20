@@ -1,5 +1,7 @@
 // console.log("hello friends");
 
+const { checkPrime } = require("crypto");
+
 // values & variables
 // var 1myNmae= "ahri";
 // var _myMother = "God";
@@ -1478,21 +1480,61 @@
 // };
 // addNumber(20);
 
-
-
 // closure in js
-const func = (a) =>(b)=>(c)=>console.log(a+b+c);
-func(7)(9)(10);
+// const func = (a) =>(b)=>(c)=>console.log(a+b+c);
+// func(7)(9)(10);
 
-function funA(aa){
-  bb = 7; 
-     function funB(){
-      cc= 8;
-      function funC(){
-         console.log(aa+bb+cc);
-      }
-      funC()
+// function funA(aa){
+//   bb = 7;
+//      function funB(){
+//       cc= 8;
+//       function funC(){
+//          console.log(aa+bb+cc);
+//       }
+//       funC()
+//     }
+//     funB()
+// }
+// funA(7)
+
+// prime number in js
+
+let num = 29;
+// let isPrime = true;
+// if (num == 1) {
+//   console.log("It is neither prime or odd");
+// } else if (num > 2) {
+//   for (let i = 2; i <= num; i++) {
+//     if (num % 2 == 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if (isPrime) {
+//     console.log(`${num} is prime`);
+//   } else {
+//     console.log(`${num} is not prime`);
+//   }
+// }
+
+function isPrime(num) {
+  if (num < 2) {
+    return false;
+  }
+  for (let i = 2; i <=Math.sqrt(num); i++) {
+    if (num % i == 0) {
+      return false;
     }
-    funB()
+  }
+  return true;
 }
-funA(7)
+
+function fromToRange(start, end) {
+  for (let i = start; i <= end; i++) {
+    if (isPrime(i)) {
+      console.log(i);
+    }
+  }
+}
+
+fromToRange(20, 30);
