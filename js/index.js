@@ -1517,11 +1517,35 @@ let num = 29;
 //   }
 // }
 
+// function isPrime(num) {
+//   if (num < 2) {
+//     return false;
+//   }
+//   for (let i = 2; i <=Math.sqrt(num); i++) {
+//     if (num % i == 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// function fromToRange(start, end) {
+//   for (let i = start; i <= end; i++) {
+//     if (isPrime(i)) {
+//       console.log(i);
+//     }
+//   }
+// }
+
+// fromToRange(20, 30);
+
+// Counting the prime number between 20-40
+
 function isPrime(num) {
   if (num < 2) {
     return false;
   }
-  for (let i = 2; i <=Math.sqrt(num); i++) {
+  for (let i = 2; i <= Math.sqrt(num); i++) {
     if (num % i == 0) {
       return false;
     }
@@ -1529,12 +1553,17 @@ function isPrime(num) {
   return true;
 }
 
-function fromToRange(start, end) {
+function rangeTo(start, end) {
+  let count = 0;
   for (let i = start; i <= end; i++) {
     if (isPrime(i)) {
       console.log(i);
+      count++;
     }
   }
+  return count;
 }
-
-fromToRange(20, 30);
+let start = 10;
+let end = 100;
+let primeCount=rangeTo(start, end);
+console.log(`The number of prime number between ${start} and ${end} is ${primeCount}`);
