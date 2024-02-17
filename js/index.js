@@ -1499,7 +1499,7 @@ const { checkPrime } = require("crypto");
 
 // prime number in js
 
-let num = 29;
+// let num = 29;
 // let isPrime = true;
 // if (num == 1) {
 //   console.log("It is neither prime or odd");
@@ -1541,29 +1541,47 @@ let num = 29;
 
 // Counting the prime number between 20-40
 
-function isPrime(num) {
-  if (num < 2) {
-    return false;
-  }
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i == 0) {
-      return false;
-    }
-  }
-  return true;
-}
+// function isPrime(num) {
+//   if (num < 2) {
+//     return false;
+//   }
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i == 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
-function rangeTo(start, end) {
-  let count = 0;
-  for (let i = start; i <= end; i++) {
-    if (isPrime(i)) {
-      console.log(i);
-      count++;
-    }
-  }
-  return count;
-}
-let start = 10;
-let end = 100;
-let primeCount=rangeTo(start, end);
-console.log(`The number of prime number between ${start} and ${end} is ${primeCount}`);
+// function rangeTo(start, end) {
+//   let count = 0;
+//   for (let i = start; i <= end; i++) {
+//     if (isPrime(i)) {
+//       console.log(i);
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// let start = 10;
+// let end = 100;
+// let primeCount=rangeTo(start, end);
+// console.log(`The number of prime number between ${start} and ${end} is ${primeCount}`);
+
+// Closure in js: Find the sum of this function sum(2)(4)(6)
+
+// const sum = (a) => (b) => (c) => console.log(a + b + c);
+// sum(2)(4)(6);
+
+const grand = (a) => {
+  let b = 7;
+  const parent = () => {
+    let c = 8;
+    const children = () => {
+      console.log(a + b + c);
+    };
+    children();
+  };
+  parent();
+};
+grand(5);
