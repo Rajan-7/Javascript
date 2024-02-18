@@ -1573,15 +1573,37 @@ const { checkPrime } = require("crypto");
 // const sum = (a) => (b) => (c) => console.log(a + b + c);
 // sum(2)(4)(6);
 
-const grand = (a) => {
-  let b = 7;
-  const parent = () => {
-    let c = 8;
-    const children = () => {
-      console.log(a + b + c);
-    };
-    children();
-  };
-  parent();
-};
-grand(5);
+// const grand = (a) => {
+//   let b = 7;
+//   const parent = () => {
+//     let c = 8;
+//     const children = () => {
+//       console.log(a + b + c);
+//     };
+//     children();
+//   };
+//   parent();
+// };
+// grand(5);
+
+// * Promise in js
+
+const newPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const data = 22;
+    const isError = false;
+    if (!isError) {
+      resolve(data);
+    } else {
+      reject(new Error("An error occur"));
+    }
+  }, 2000);
+});
+
+newPromise
+  .then((data) => {
+    console.log("Our data :", data);
+  })
+  .catch((error) => {
+    console.error("Error", error.message);
+  });
