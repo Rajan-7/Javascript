@@ -1,6 +1,8 @@
 // console.log("hello friends");
 
+const { error, count } = require("console");
 const { checkPrime } = require("crypto");
+const { workerData } = require("worker_threads");
 
 // values & variables
 // var 1myNmae= "ahri";
@@ -1143,9 +1145,9 @@ const { checkPrime } = require("crypto");
 // 👉 Function currying
 // It doesn't take multiple but takes the first one & return a new functions until
 // function sum(n1){
-//     // console.log(n1);
+// console.log(n1);
 //     return function(n2){
-//         // console.log(n1,n2);
+// console.log(n1,n2);
 //         return function(n3){
 //             console.log(n1+n2+n3);
 //         }
@@ -1588,22 +1590,75 @@ const { checkPrime } = require("crypto");
 
 // * Promise in js
 
-const newPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    const data = 22;
-    const isError = false;
-    if (!isError) {
-      resolve(data);
-    } else {
-      reject(new Error("An error occur"));
-    }
-  }, 2000);
-});
+// const newPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     const data = 22;
+//     const isError = false;
+//     if (!isError) {
+//       resolve(data);
+//     } else {
+//       reject(new Error("An error occur"));
+//     }
+//   }, 2000);
+// });
 
-newPromise
-  .then((data) => {
-    console.log("Our data :", data);
-  })
-  .catch((error) => {
-    console.error("Error", error.message);
-  });
+// newPromise
+//   .then((data) => {
+//     console.log("Our data :", data);
+//   })
+//   .catch((error) => {
+//     console.error("Error", error.message);
+//   });
+
+// const myPromise = new Promise((resolve, reject) => {
+//   let promiseData = "Everything Is Going To Be Alright";
+//   let isError = false;
+//   setTimeout(() => {
+//     if (!isError) {
+//       resolve(promiseData);
+//     } else {
+//       reject(new Error("Promise Wasn't Fulfilled"));
+//     }
+//   }, 3000);
+// });
+
+// myPromise
+//   .then((promiseData) => {
+//     console.log("Hear This Out =>", promiseData);
+//   })
+//   .catch((error) => {
+//     console.error("Error", error.message);
+//   });
+
+// Event Loop
+
+// let functOne = () => {
+//   setTimeout(() => {
+//     console.log("HappyHappy");
+//   }, 3000);
+// };
+
+// let functTwo = () => {
+//   console.log("Im One+One Function");
+//   functOne();
+//   setTimeout(() => {
+//     console.log("Great Happiness😎");
+//   }, 4000);
+// };
+
+// functTwo();
+
+// Counting words
+// let countWords = (sentence) => {
+//   sentence = sentence.trim();
+//   let words = sentence.split(" ");
+//   return words.length;
+// };
+// let sentenceData = "Quick Brown Fox Jump Over The Lazy Dog";
+// let data = countWords(sentenceData);
+// console.log(data);
+
+let sentence = "hello hello hello Hello hello hello hello";
+let words = sentence.split(" ");
+console.log(words);
+console.log(words.length);
