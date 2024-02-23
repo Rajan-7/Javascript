@@ -1648,7 +1648,7 @@ const { workerData } = require("worker_threads");
 
 // functTwo();
 
-// Counting words
+// Counting words in a sentence
 // let countWords = (sentence) => {
 //   sentence = sentence.trim();
 //   let words = sentence.split(" ");
@@ -1658,7 +1658,28 @@ const { workerData } = require("worker_threads");
 // let data = countWords(sentenceData);
 // console.log(data);
 
-let sentence = "hello hello hello Hello hello hello hello";
-let words = sentence.split(" ");
-console.log(words);
-console.log(words.length);
+// let sentence = "hello hello hello Hello hello hello hello";
+// let words = sentence.split(" ");
+// console.log(words);
+// console.log(words.length);
+
+// * Variable shadowing in js -> Variable declared  in the local scope has the same name as variable in a outer scope
+// let x = 20;
+// function myFunct() {
+//   let x = 10;
+//   console.log(x);
+// }
+// myFunct()
+// console.log(x);
+
+// Hoisting -> Variable & Function declaration are move to the top of their containing scope during the compile phase
+
+console.log(xs);
+var xs=10;
+console.log(xs);
+
+// Undefined & Null: Primitive data type
+let xx;
+console.log(xx);
+let xy = null;
+console.log(xy);
