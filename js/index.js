@@ -1674,12 +1674,34 @@ const { workerData } = require("worker_threads");
 
 // Hoisting -> Variable & Function declaration are move to the top of their containing scope during the compile phase
 
-console.log(xs);
-var xs=10;
-console.log(xs);
+// console.log(xs);
+// var xs=10;
+// console.log(xs);
 
 // Undefined & Null: Primitive data type
-let xx;
-console.log(xx);
-let xy = null;
-console.log(xy);
+// let xx;
+// console.log(xx);
+// let xy = null;
+// console.log(xy);
+
+// Non-primitive data typw
+// const time = {
+//     hours:4,
+//     minute:45,
+//     second:60
+// }
+// console.log(time.hours,time.minute);
+
+// Spread Operator
+function sum(a,b,c){
+    return a+b+c
+}
+let numbers = [2,4,6];
+const res = sum(...numbers);
+console.log(res);
+
+// USing Object
+let obj1 = {a:1,b:2};
+let obj2 = {c:3,d:4};
+let cc = {...obj1,...obj2};
+console.log(cc);
