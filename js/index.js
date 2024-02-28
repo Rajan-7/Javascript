@@ -1693,15 +1693,25 @@ const { workerData } = require("worker_threads");
 // console.log(time.hours,time.minute);
 
 // Spread Operator
-function sum(a,b,c){
-    return a+b+c
-}
-let numbers = [2,4,6];
-const res = sum(...numbers);
-console.log(res);
+// function sum(a,b,c){
+//     return a+b+c
+// }
+// let numbers = [2,4,6];
+// const res = sum(...numbers);
+// console.log(res);
 
 // USing Object
-let obj1 = {a:1,b:2};
-let obj2 = {c:3,d:4};
-let cc = {...obj1,...obj2};
-console.log(cc);
+// let obj1 = {a:1,b:2};
+// let obj2 = {c:3,d:4};
+// let cc = {...obj1,...obj2};
+// console.log(cc);
+
+// * MAP 
+const nums = [2,3,4,5,6];
+const mulRes = nums.map((elem)=>elem * 2);
+console.log(mulRes);
+
+const student ={
+    name:"hari"
+}
+console.log(student);
