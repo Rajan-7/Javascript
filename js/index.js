@@ -1707,11 +1707,24 @@ const { workerData } = require("worker_threads");
 // console.log(cc);
 
 // * MAP 
-const nums = [2,3,4,5,6];
-const mulRes = nums.map((elem)=>elem * 2);
-console.log(mulRes);
+// const nums = [2,3,4,5,6];
+// const mulRes = nums.map((elem)=>elem * 2);
+// console.log(mulRes);
 
-const student ={
-    name:"hari"
-}
-console.log(student);
+// const student ={
+//     name:"hari"
+// }
+// console.log(student);
+
+
+// Event Loop
+console.log("Start The Loop");
+setTimeout(()=>{
+    console.log("Low Queue");
+},1000)
+
+Promise.resolve().then(()=>{
+    console.log("High Queue");
+})
+
+console.log("End the Loop");
