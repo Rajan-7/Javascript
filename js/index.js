@@ -1718,13 +1718,24 @@ const { workerData } = require("worker_threads");
 
 
 // Event Loop
-console.log("Start The Loop");
-setTimeout(()=>{
-    console.log("Low Queue");
-},1000)
+// console.log("Start The Loop");
+// setTimeout(()=>{
+//     console.log("Low Queue");
+// },1000)
 
-Promise.resolve().then(()=>{
-    console.log("High Queue");
-})
+// Promise.resolve().then(()=>{
+//     console.log("High Queue");
+// })
 
-console.log("End the Loop");
+// console.log("End the Loop");
+
+// let x;
+// function myFunc(){
+//     var x= 4;
+//     console.log(x);
+// }
+
+// myFunc();
+// console.log(x);
+
+// 1440, 1280, 768, 375
