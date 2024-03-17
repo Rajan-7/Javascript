@@ -1739,3 +1739,46 @@ const { workerData } = require("worker_threads");
 // console.log(x);
 
 // 1440, 1280, 768, 375
+
+// Spread operator in js
+// Coping the Array
+let ra = [1,2,3.2];
+let copiedRa = [...ra];
+console.log(copiedRa);
+
+// Merging the array
+let ra1 = [1,2,2.2];
+let ra2 = [1.2,2.3,2.5];
+let copied2Ra = [...ra1,...ra2];
+console.log(copied2Ra);
+
+// Coping the object
+let obj = {name:"Roman",age:142};
+let copyObj = {...obj};
+console.log(copyObj);
+
+// Merging the object
+let obj1 = {name:"Jkovic",age:21};
+let obj2 = {location:"Colorado",company:"xyz"};
+let combineObj = {...obj,...obj2};
+let combine2Obj = {...obj1,...obj2};
+console.log(combineObj);
+console.log(combine2Obj);
+
+// Adding element to array
+let rray = [2.6,11.2,10];
+let newRray = [...rray,2.77,77];
+console.log(newRray);
+
+// Finding the max & min in array
+let rray1 = [2.6,11.2,10];
+let max = Math.max(...rray1);
+let min = Math.min(...rray1);
+console.log(max);
+console.log(min);
+
+
+
+
+
+
