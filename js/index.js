@@ -392,7 +392,7 @@ const { workerData } = require("worker_threads");
 
 // ✍🏿 Traversal in Arrays
 
-// var myFriends = ['Rose','Roman','Raz','Jhon'];
+// var myFriends = 'Rose','Roman','Raz','Jhon'];
 // console.log(myFriends[myFriends.length - 1]);
 
 // 🖍️ For in loop
@@ -1742,40 +1742,57 @@ const { workerData } = require("worker_threads");
 
 // Spread operator in js
 // Coping the Array
-let ra = [1,2,3.2];
-let copiedRa = [...ra];
-console.log(copiedRa);
+// let ra = [1,2,3.2];
+// let copiedRa = [...ra];
+// console.log(copiedRa);
 
 // Merging the array
-let ra1 = [1,2,2.2];
-let ra2 = [1.2,2.3,2.5];
-let copied2Ra = [...ra1,...ra2];
-console.log(copied2Ra);
+// let ra1 = [1,2,2.2];
+// let ra2 = [1.2,2.3,2.5];
+// let copied2Ra = [...ra1,...ra2];
+// console.log(copied2Ra);
 
 // Coping the object
-let obj = {name:"Roman",age:142};
-let copyObj = {...obj};
-console.log(copyObj);
+// let obj = {name:"Roman",age:142};
+// let copyObj = {...obj};
+// console.log(copyObj);
 
 // Merging the object
-let obj1 = {name:"Jkovic",age:21};
-let obj2 = {location:"Colorado",company:"xyz"};
-let combineObj = {...obj,...obj2};
-let combine2Obj = {...obj1,...obj2};
-console.log(combineObj);
-console.log(combine2Obj);
+// let obj1 = {name:"Jkovic",age:21};
+// let obj2 = {location:"Colorado",company:"xyz"};
+// let combineObj = {...obj,...obj2};
+// let combine2Obj = {...obj1,...obj2};
+// console.log(combineObj);
+// console.log(combine2Obj);
 
 // Adding element to array
-let rray = [2.6,11.2,10];
-let newRray = [...rray,2.77,77];
-console.log(newRray);
+// let rray = [2.6,11.2,10];
+// let newRray = [...rray,2.77,77];
+// console.log(newRray);
 
 // Finding the max & min in array
-let rray1 = [2.6,11.2,10];
-let max = Math.max(...rray1);
-let min = Math.min(...rray1);
-console.log(max);
-console.log(min);
+// let rray1 = [2.6,11.2,10];
+// let max = Math.max(...rray1);
+// let min = Math.min(...rray1);
+// console.log(max);
+// console.log(min);
+
+
+// Array in js
+let corr = [1,2,3,4,5];
+let sum = 0;
+let result = corr.map((ind)=>{
+     sum = ind + sum;
+     return sum
+})
+
+let sum1 = corr.reduce((acc,cur)=> acc+cur)
+
+let fil = corr.filter((fi)=>{
+    return fi > 2
+})
+
+console.log(result,fil,sum1);
 
 
 
