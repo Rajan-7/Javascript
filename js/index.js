@@ -1779,20 +1779,86 @@ const { workerData } = require("worker_threads");
 
 
 // Array in js
-let corr = [1,2,3,4,5];
-let sum = 0;
-let result = corr.map((ind)=>{
-     sum = ind + sum;
-     return sum
+// let corr = [1,2,3,4,5];
+// let sum = 0;
+// let result = corr.map((ind)=>{
+//      sum = ind + sum;
+//      return sum
+// })
+
+// let sum1 = corr.reduce((acc,cur)=> acc+cur);
+
+// let slce = corr.slice(0,2);
+
+// let fil = corr.filter((fi)=>{
+//     return fi > 2
+// })
+
+// console.log(result,fil,sum1,slce);
+
+// js
+// setTimeout(()=>{
+//     console.log("Timeout");
+// },0);
+// Promise.resolve().then(()=>console.log("Promise"));
+// console.log("End");
+
+// async function foo(){
+//     return "Hello";
+// }
+// async function main(){
+//     const res = await foo();
+// console.log(res);
+// }
+// main();
+
+// console.log([1,2]==[1,2]);
+// let user1 = {
+//     name:"x",
+//     address:{
+//         city:"ktm"
+//     }
+// }
+
+// let user2 = user1;
+// user2.name="Y";
+// user2.address.city="pkr";
+// console.log(user1);
+// console.log(user2);
+
+// const num = [0,1,2,3,4,5];
+// let res = num.filter((c)=>{
+//     return c < 3;
+// }).map((i)=> i + 5)
+// console.log(res);
+
+// let str = "hi this is apple";
+// let arr = str.split(" ");
+
+// let res2 = arr.map((cur)=>{
+//     let i =0;
+//     return cur[i].toUpperCase()+cur.slice(1);
+// })
+
+
+// console.log(arr);
+// console.log(res2);
+
+
+// const arrr = ['a','c','ef','c','a','ef'];
+// const unique = arrr.filter((val,ind,ar)=>{
+//     return ind == ar.indexOf(val);
+// })
+// console.log(unique);
+
+console.log(true === false);
+
+let arr = [5,6,2];
+const sum = arr.reduce((acc,curElm,index,array)=>{
+  return acc += curElm;
 })
+console.log(sum);
 
-let sum1 = corr.reduce((acc,cur)=> acc+cur)
-
-let fil = corr.filter((fi)=>{
-    return fi > 2
-})
-
-console.log(result,fil,sum1);
 
 
 
