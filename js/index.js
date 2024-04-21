@@ -1706,7 +1706,7 @@ const { workerData } = require("worker_threads");
 // let cc = {...obj1,...obj2};
 // console.log(cc);
 
-// * MAP 
+// * MAP
 // const nums = [2,3,4,5,6];
 // const mulRes = nums.map((elem)=>elem * 2);
 // console.log(mulRes);
@@ -1715,7 +1715,6 @@ const { workerData } = require("worker_threads");
 //     name:"hari"
 // }
 // console.log(student);
-
 
 // Event Loop
 // console.log("Start The Loop");
@@ -1776,7 +1775,6 @@ const { workerData } = require("worker_threads");
 // let min = Math.min(...rray1);
 // console.log(max);
 // console.log(min);
-
 
 // Array in js
 // let corr = [1,2,3,4,5];
@@ -1840,10 +1838,8 @@ const { workerData } = require("worker_threads");
 //     return cur[i].toUpperCase()+cur.slice(1);
 // })
 
-
 // console.log(arr);
 // console.log(res2);
-
 
 // const arrr = ['a','c','ef','c','a','ef'];
 // const unique = arrr.filter((val,ind,ar)=>{
@@ -1851,17 +1847,32 @@ const { workerData } = require("worker_threads");
 // })
 // console.log(unique);
 
-console.log(true === false);
+// console.log(true === false);
 
-let arr = [5,6,2];
-const sum = arr.reduce((acc,curElm,index,array)=>{
-  return acc += curElm;
-})
-console.log(sum);
+// let arr = [5,6,2];
+// const sum = arr.reduce((acc,curElm,index,array)=>{
+//   return acc += curElm;
+// })
+// console.log(sum);
 
+function addT(x) {
+  return 5 + x;
+}
 
+function subtract(x) {
+  return 10 - x;
+}
 
+function mul(x) {
+  return 2 * x;
+}
 
+function compose(...funs) {
+  return function (x) {
+    return funs.reduce((acc, fun) => fun(acc),x);
+  };
+}
 
-
+const composeRes = compose(addT, subtract, mul);
+console.log(composeRes(2));
 
