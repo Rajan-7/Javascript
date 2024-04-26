@@ -1855,24 +1855,57 @@ const { workerData } = require("worker_threads");
 // })
 // console.log(sum);
 
-function addT(x) {
-  return 5 + x;
+// Function composition
+// function addT(x) {
+//   return 5 + x;
+// }
+
+// function subtract(x) {
+//   return 10 - x;
+// }
+
+// function mul(x) {
+//   return 2 * x;
+// }
+
+// function compose(...funs) {
+//   return function (x) {
+//     return funs.reduce((acc, fun) => fun(acc),x);
+//   };
+// }
+
+// const composeRes = compose( addT,subtract, mul);
+// console.log(composeRes(2));
+
+// let aa = true;
+// console.log(!aa);
+// console.log([1,2]==[1,2]);
+
+
+// Sum of an array
+const sum = (arr) =>{
+    return arr.reduce((s,acc)=>s + acc)
 }
 
-function subtract(x) {
-  return 10 - x;
+const ss = sum([2,3,-9,6]);
+console.log(ss);
+
+// To reverse the string
+const stringRev = (str)=>{
+    return str.split("").reverse().join('');
 }
 
-function mul(x) {
-  return 2 * x;
+const rev = stringRev("hello");
+console.log(rev);
+
+// factorial of number
+const factorialNum = (num)=>{
+    if(num === 0 || num === 1){
+        return 1;
+    }
+    return num * factorialNum(num-1);
 }
 
-function compose(...funs) {
-  return function (x) {
-    return funs.reduce((acc, fun) => fun(acc),x);
-  };
-}
-
-const composeRes = compose(addT, subtract, mul);
-console.log(composeRes(2));
+const fact = factorialNum(5);
+console.log(fact);
 
