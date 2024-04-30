@@ -1,7 +1,5 @@
 // console.log("hello friends");
 
-
-
 // values & variables
 // var 1myNmae= "ahri";
 // var _myMother = "God";
@@ -1879,44 +1877,42 @@
 // console.log(!aa);
 // console.log([1,2]==[1,2]);
 
-
 // Sum of an array
-const sum = (arr) =>{
-    return arr.reduce((s,acc)=>s + acc)
-}
+// const sum = (arr) =>{
+//     return arr.reduce((s,acc)=>s + acc)
+// }
 
-const ss = sum([2,3,-9,6]);
-console.log(ss);
+// const ss = sum([2,3,-9,6]);
+// console.log(ss);
 
 // To reverse the string
-const stringRev = (str)=>{
-    return str.split("").reverse().join('');
-}
+// const stringRev = (str)=>{
+//     return str.split("").reverse().join('');
+// }
 
-const rev = stringRev("hello");
-console.log(rev);
+// const rev = stringRev("hello");
+// console.log(rev);
 
 // factorial of number
-const factorialNum = (num)=>{
-    if(num === 0 || num === 1){
-        return 1;
-    }
-    return num * factorialNum(num-1);
-}
+// const factorialNum = (num)=>{
+//     if(num === 0 || num === 1){
+//         return 1;
+//     }
+//     return num * factorialNum(num-1);
+// }
 
-const fact = factorialNum(5);
-console.log(fact);
+// const fact = factorialNum(5);
+// console.log(fact);
 
 // To test whether word exist in the sentence or not
-let str = "Hello this is global news from XYZ company";
-let regex = /companyy/;
-let testStr  = regex.test(str);
-if(testStr){
-    console.log(`Word is present in sentence`);
-}else{
-    console.log(`Not present`);
-}
-
+// let str = "Hello this is global news from XYZ company";
+// let regex = /companyy/;
+// let testStr  = regex.test(str);
+// if(testStr){
+//     console.log(`Word is present in sentence`);
+// }else{
+//     console.log(`Not present`);
+// }
 
 // let word = "Hello";
 
@@ -1927,91 +1923,158 @@ if(testStr){
 //     console.log(`Not`);
 // }
 
-
 // To check palindrome
-const CheckPalindrome = (str)=>{
-    let revStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
-    let  rev = revStr.split('').reverse().join('');
-    return revStr === rev
-}
-const rr = CheckPalindrome('race ca');
-if(rr){
-    console.log('It is palindrome');
-}else{
-    console.log('It is not');
-}
+// const CheckPalindrome = (str)=>{
+//     let revStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+//     let  rev = revStr.split('').reverse().join('');
+//     return revStr === rev
+// }
+// const rr = CheckPalindrome('race ca');
+// if(rr){
+//     console.log('It is palindrome');
+// }else{
+//     console.log('It is not');
+// }
 
 // Maximum number in array
-const findMax = (arr)=>{
-    return Math.max(...arr);
-}
-let maxx = findMax([4,5,6,11]);
-console.log(maxx);
+// const findMax = (arr)=>{
+//     return Math.max(...arr);
+// }
+// let maxx = findMax([4,5,6,11]);
+// console.log(maxx);
 
 // Fibonacci series
-const fibSeries = (n)=>{
-   const series = [];
-   if(n >= 0){
-    series.push(0);
-   }
-   if(n >= 1){
-    series.push(1);
-   }
-   for(let i = 2;i<=n;i++){
-    const nextSeries = series[i-1]+series[i-2];
-    if(nextSeries > n){
-        break;
-    }
-    series.push(nextSeries);
-   }
-   return series;
-}
-let sss = fibSeries(100);
-console.log(sss);
+// const fibSeries = (n)=>{
+//    const series = [];
+//    if(n >= 0){
+//     series.push(0);
+//    }
+//    if(n >= 1){
+//     series.push(1);
+//    }
+//    for(let i = 2;i<=n;i++){
+//     const nextSeries = series[i-1]+series[i-2];
+//     if(nextSeries > n){
+//         break;
+//     }
+//     series.push(nextSeries);
+//    }
+//    return series;
+// }
+// let sss = fibSeries(100);
+// console.log(sss);
 
 // Remove duplication from array
-const removeDuplicate = (arr)=>{
-    return Array.from(new Set(arr));
-}
-let rrr = removeDuplicate(["Ram","hari","Ram"]);
-let r2 = removeDuplicate([1,2,3,4,5,1,2,3])
-console.log(rrr,r2);
+// const removeDuplicate = (arr)=>{
+//     return Array.from(new Set(arr));
+// }
+// let rrr = removeDuplicate(["Ram","hari","Ram"]);
+// let r2 = removeDuplicate([1,2,3,4,5,1,2,3])
+// console.log(rrr,r2);
 
 // Count the vowels in string
-const countVowel = (str)=>{
-    let vowels = 'aeiou';
-    return str.toLowerCase().split('').filter(char=>vowels.includes(char)).length;
-}
-let c = countVowel("Excellent person");
-console.log(c);
+// const countVowel = (str)=>{
+//     let vowels = 'aeiou';
+//     return str.toLowerCase().split('').filter(char=>vowels.includes(char)).length;
+// }
+// let c = countVowel("Excellent person");
+// console.log(c);
 
 // Title case
-const titleCase = (str)=>{
-    return str.toLowerCase().replace(/\b\w/g,char=>char.toUpperCase());
-}
-let tc = titleCase("my blog");
-console.log(tc);
+// const titleCase = (str)=>{
+//     return str.toLowerCase().replace(/\b\w/g,char=>char.toUpperCase());
+// }
+// let tc = titleCase("my blog");
+// console.log(tc);
 
 // TO check prime number
 
-function isPrime(n){
-    if(n < 2){
-        return false;
+// function isPrime(n){
+//     if(n < 2){
+//         return false;
+//     }
+//     for ( let i = 2;i<= Math.sqrt(n);i++){
+//         if(n%i == 0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function rangeFromTo(s,e){
+//     for(let i=s;i<=e;i++){
+//         if(isPrime(i)){
+//             console.log(i);
+//         }
+//     }
+// }
+
+// rangeFromTo(20,30);
+
+// To  sort the Unsorted array
+// function findTheConsecutiveArrayLength(arr) {
+//   arr.sort((a, b) => a - b);
+//   let consecutive = [];
+//   let len = 1;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] == arr[i - 1] + 1) {
+//       len++;
+//     } else {
+//       if (len > 1) {
+//         consecutive.push(len);
+//       }
+//       len = 1;
+//     }
+//   }
+//   if (len > 1) {
+//     consecutive.push(len);
+//   }
+//   return consecutive;
+// }
+
+// let l = findTheConsecutiveArrayLength([1, 4, 5, 2, 6, 7]);
+// console.log(l);
+
+const findLength = (arr) => {
+  arr.sort((a, b) => a - b);
+  let maxLen = 0;
+  let lenn = 1;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] === arr[i - 1] + 1) {
+      lenn++;
+    } else if (arr[i] !== arr[i - 1]) {
+      maxLen = Math.max(maxLen, lenn);
+      lenn = 1;
     }
-    for ( let i = 2;i<= Math.sqrt(n);i++){
-        if(n%i == 0){
-            return false;
-        }
+  }
+  maxLen = Math.max(maxLen, lenn);
+  return maxLen;
+};
+
+let unsort = [6, 100, 1, 200, 2, 3, 4];
+let res = findLength(unsort);
+let sort = unsort.sort((a, b) => a - b);
+console.log(sort);
+console.log(res);
+
+function findLargestLength(arr) {
+  arr.sort((a, b) => a - b);
+  let maxLen = 0;
+  let lennn = 1;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] === arr[i - 1] + 1) {
+      lennn++;
+    } else if (arr[i] !== arr[i - 1]) {
+      maxLen = Math.max(maxLen, lennn);
+      lennn = 1;
     }
-    return true;
+  }
+  maxLen = Math.max(maxLen, lennn);
+  return maxLen;
 }
 
-function rangeFromTo(s,e){
-    for(let i=s;i<=e;i++){
-        if(isPrime(i)){
-            console.log(i);
-        }
-    }
-}
-
-rangeFromTo(20,30);
+const unsortAr = [6, 200, 1, 300, 2, 3, 4];
+const ll = findLargestLength(unsortAr);
+const srt = unsortAr.sort((a, b) => a - b);
+console.log(ll);
+console.log(srt);
