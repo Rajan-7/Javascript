@@ -2035,46 +2035,92 @@
 // let l = findTheConsecutiveArrayLength([1, 4, 5, 2, 6, 7]);
 // console.log(l);
 
-const findLength = (arr) => {
-  arr.sort((a, b) => a - b);
-  let maxLen = 0;
-  let lenn = 1;
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] === arr[i - 1] + 1) {
-      lenn++;
-    } else if (arr[i] !== arr[i - 1]) {
-      maxLen = Math.max(maxLen, lenn);
-      lenn = 1;
+// const findLength = (arr) => {
+//   arr.sort((a, b) => a - b);
+//   let maxLen = 0;
+//   let lenn = 1;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] === arr[i - 1] + 1) {
+//       lenn++;
+//     } else if (arr[i] !== arr[i - 1]) {
+//       maxLen = Math.max(maxLen, lenn);
+//       lenn = 1;
+//     }
+//   }
+//   maxLen = Math.max(maxLen, lenn);
+//   return maxLen;
+// };
+
+// let unsort = [6, 100, 1, 200, 2, 3, 4];
+// let res = findLength(unsort);
+// let sort = unsort.sort((a, b) => a - b);
+// console.log(sort);
+// console.log(res);
+
+// function findLargestLength(arr) {
+//   arr.sort((a, b) => a - b);
+//   let maxLen = 0;
+//   let lennn = 1;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] === arr[i - 1] + 1) {
+//       lennn++;
+//     } else if (arr[i] !== arr[i - 1]) {
+//       maxLen = Math.max(maxLen, lennn);
+//       lennn = 1;
+//     }
+//   }
+//   maxLen = Math.max(maxLen, lennn);
+//   return maxLen;
+// }
+
+// const unsortAr = [6, 200, 1, 300, 2, 3, 4];
+// const ll = findLargestLength(unsortAr);
+// const srt = unsortAr.sort((a, b) => a - b);
+// console.log(ll);
+// console.log(srt);
+
+
+// prime number bet 20 - 30
+function isPrime(nn){
+  if(nn < 2) return false;
+  for(let i = 2;i<=Math.sqrt(nn);i++){
+    if(nn % i === 0){
+      return false;
     }
   }
-  maxLen = Math.max(maxLen, lenn);
-  return maxLen;
-};
-
-let unsort = [6, 100, 1, 200, 2, 3, 4];
-let res = findLength(unsort);
-let sort = unsort.sort((a, b) => a - b);
-console.log(sort);
-console.log(res);
-
-function findLargestLength(arr) {
-  arr.sort((a, b) => a - b);
-  let maxLen = 0;
-  let lennn = 1;
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] === arr[i - 1] + 1) {
-      lennn++;
-    } else if (arr[i] !== arr[i - 1]) {
-      maxLen = Math.max(maxLen, lennn);
-      lennn = 1;
+  return true;
+}
+function fromTo(s,e){
+  for(let i = s;i<= e;i++){
+    if(isPrime(i)){
+      console.log(i);
     }
   }
-  maxLen = Math.max(maxLen, lennn);
-  return maxLen;
 }
 
-const unsortAr = [6, 200, 1, 300, 2, 3, 4];
-const ll = findLargestLength(unsortAr);
-const srt = unsortAr.sort((a, b) => a - b);
-console.log(ll);
-console.log(srt);
+fromTo(20,30);
+
+// To check the vowel in words
+const countVowel = (str)=>{
+  let vowel = 'aeiou';
+  return str.toLowerCase().split("").filter((char)=>vowel.includes(char)).length;
+}
+let rr = countVowel("Heel");
+console.log(rr);
+
+// To checke the number of character
+// let ccc = "hello";
+// console.log(ccc.length);
+
+let ss = "hello world, this is galaxy";
+let srr = ss.split(" ");
+console.log(srr.length);
+
+// To check the palindrome
+const paliDrome = (str)=>{
+  let s = str.toLowerCase().replace(/[^a-z0-9]/g,'');
+  let rs = s.split('').reverse().join('');
+  return s === rs;
+}
+ let r = paliDrome("a man a plan a canal panama");
+ console.log(r);
