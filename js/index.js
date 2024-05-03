@@ -2081,46 +2081,136 @@
 
 
 // prime number bet 20 - 30
-function isPrime(nn){
-  if(nn < 2) return false;
-  for(let i = 2;i<=Math.sqrt(nn);i++){
-    if(nn % i === 0){
-      return false;
-    }
-  }
-  return true;
-}
-function fromTo(s,e){
-  for(let i = s;i<= e;i++){
-    if(isPrime(i)){
-      console.log(i);
-    }
-  }
-}
+// function isPrime(nn){
+//   if(nn < 2) return false;
+//   for(let i = 2;i<=Math.sqrt(nn);i++){
+//     if(nn % i === 0){
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// function fromTo(s,e){
+//   for(let i = s;i<= e;i++){
+//     if(isPrime(i)){
+//       console.log(i);
+//     }
+//   }
+// }
 
-fromTo(20,30);
+// fromTo(20,30);
 
 // To check the vowel in words
-const countVowel = (str)=>{
-  let vowel = 'aeiou';
-  return str.toLowerCase().split("").filter((char)=>vowel.includes(char)).length;
-}
-let rr = countVowel("Heel");
-console.log(rr);
+// const countVowel = (str)=>{
+//   let vowel = 'aeiou';
+//   return str.toLowerCase().split("").filter((char)=>vowel.includes(char)).length;
+// }
+// let rr = countVowel("Heel");
+// console.log(rr);
 
 // To checke the number of character
 // let ccc = "hello";
 // console.log(ccc.length);
 
-let ss = "hello world, this is galaxy";
-let srr = ss.split(" ");
-console.log(srr.length);
+// let ss = "hello world, this is galaxy";
+// let srr = ss.split(" ");
+// console.log(srr.length);
 
 // To check the palindrome
-const paliDrome = (str)=>{
-  let s = str.toLowerCase().replace(/[^a-z0-9]/g,'');
-  let rs = s.split('').reverse().join('');
-  return s === rs;
+// const paliDrome = (str)=>{
+//   let s = str.toLowerCase().replace(/[^a-z0-9]/g,'');
+//   let rs = s.split('').reverse().join('');
+//   return s === rs;
+// }
+//  let r = paliDrome("a man a plan a canal panaml");
+//  console.log(r);
+
+
+//  var x = 10;
+//  function foo(){
+//    var x =2;
+//    console.log(x);
+//  }
+//  foo();
+
+// function to find the longest length of consecutive numbers in an unsorted array
+const findTheLargest = (arr)=>{
+  arr.sort((a,b)=>a-b);
+  let maxx = 0;
+  let len = 1;
+  for(let i = 1;i<arr.length;i++){
+    if(arr[i] === arr[i-1]+1){
+      len++
+    }else if(arr[i] !== arr[i-1]){
+      maxx = Math.max(maxx,len);
+      len = 1;
+    }
+  }
+  maxx = Math.max(maxx,len);
+  return maxx;
 }
- let r = paliDrome("a man a plan a canal panama");
- console.log(r);
+
+let array = [200,1,100,6,2,3,4];
+let ll = findTheLargest(array);
+let srt = array.sort((a,b)=>a-b);
+console.log("This is the sorted array ",srt);
+console.log("The length of the consecutive numbers of an array is",ll);
+
+
+// Palindrome
+const checkDrome = (str)=>{
+  let revv = str.toLowerCase().replace(/[^a-z0-9]/g,'');
+  let vver = revv.split('').reverse().join('');
+  return revv === vver
+}
+
+let isTrue = checkDrome("rar");
+console.log(isTrue);
+
+// to count the number of vowel in str/sentence
+const countVowel = (str)=>{
+  let vv = 'AEIOU';
+  return str.toUpperCase().split('').filter((cc)=>vv.includes(cc)).length;
+}
+let se = "Hello, my friend";
+let v = countVowel(se);
+console.log("The number of vowel in ",se," is ",v);
+
+// To check the prime number between 50 - 60
+
+const isPrime  = (nn)=>{
+  if(nn <= 2) return false;
+  for (let i = 2;i<=Math.sqrt(nn);i++){
+    if(nn%i === 0){
+      return false
+    }
+  }
+  return true
+}
+
+const rangeTo = (s,e)=>{
+  let prime = [];
+  for(let i = s;i<=e;i++){
+    if(isPrime(i)){
+     prime.push(i);
+    }
+  }
+  return prime
+}
+
+let pNum=rangeTo(50,60);
+console.log(pNum);
+
+// Sum of the array
+const sumArray = (arr)=>{
+  return arr.reduce((elem,acc)=>elem+acc);
+}
+let sum = sumArray([1,2]);
+console.log(sum);
+
+// To filter the duplicate in array
+const arr = (ar)=>{
+  return Array.from(new Set(ar));
+}
+let newAr = arr([1,23,44,23,1,5]);
+console.log(newAr.sort((a,b)=>a-b));
