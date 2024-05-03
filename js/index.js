@@ -2214,3 +2214,38 @@ const arr = (ar)=>{
 }
 let newAr = arr([1,23,44,23,1,5]);
 console.log(newAr.sort((a,b)=>a-b));
+
+// LeetCode 1
+const returnCounter = (n)=>{
+  return ()=>{
+     let nn = n;
+     n++;
+     return nn
+  }
+}
+let cc = returnCounter(10);
+console.log(cc());
+console.log(cc());
+console.log(cc());
+
+// LeetCode 2
+const expect = (val)=>{
+  return {
+    tobe:(tt)=>{
+       if(tt !== val){
+        throw new Error("Not Equal");
+       }
+    },
+    notTobe:(ff)=>{
+      if(ff === val){
+        throw new Error("Equal");
+      }
+    }
+  }
+}
+try {
+  expect(8).tobe(5);
+} catch (error) {
+  console.log(error.message);
+}
+
