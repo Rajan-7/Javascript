@@ -46,7 +46,7 @@
 
 // NaN
 // var isNumber = 9823242;
-// if(!isNaN(isNumber)){
+// if(!isNaN(isNumber))
 //     console.log("Great");
 // }
 // console.log(NaN === NaN);
@@ -2079,7 +2079,6 @@
 // console.log(ll);
 // console.log(srt);
 
-
 // prime number bet 20 - 30
 // function isPrime(nn){
 //   if(nn < 2) return false;
@@ -2125,7 +2124,6 @@
 //  let r = paliDrome("a man a plan a canal panaml");
 //  console.log(r);
 
-
 //  var x = 10;
 //  function foo(){
 //    var x =2;
@@ -2134,118 +2132,191 @@
 //  foo();
 
 // function to find the longest length of consecutive numbers in an unsorted array
-const findTheLargest = (arr)=>{
-  arr.sort((a,b)=>a-b);
-  let maxx = 0;
-  let len = 1;
-  for(let i = 1;i<arr.length;i++){
-    if(arr[i] === arr[i-1]+1){
-      len++
-    }else if(arr[i] !== arr[i-1]){
-      maxx = Math.max(maxx,len);
-      len = 1;
-    }
-  }
-  maxx = Math.max(maxx,len);
-  return maxx;
-}
+// const findTheLargest = (arr) => {
+//   arr.sort((a, b) => a - b);
+//   let maxx = 0;
+//   let len = 1;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] === arr[i - 1] + 1) {
+//       len++;
+//     } else if (arr[i] !== arr[i - 1]) {
+//       maxx = Math.max(maxx, len);
+//       len = 1;
+//     }
+//   }
+//   maxx = Math.max(maxx, len);
+//   return maxx;
+// };
 
-let array = [200,1,100,6,2,3,4];
-let ll = findTheLargest(array);
-let srt = array.sort((a,b)=>a-b);
-console.log("This is the sorted array ",srt);
-console.log("The length of the consecutive numbers of an array is",ll);
-
+// let array = [200, 1, 100, 6, 2, 3, 4];
+// let ll = findTheLargest(array);
+// let srt = array.sort((a, b) => a - b);
+// console.log("This is the sorted array ", srt);
+// console.log("The length of the consecutive numbers of an array is", ll);
 
 // Palindrome
-const checkDrome = (str)=>{
-  let revv = str.toLowerCase().replace(/[^a-z0-9]/g,'');
-  let vver = revv.split('').reverse().join('');
-  return revv === vver
-}
+// const checkDrome = (str) => {
+//   let revv = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+//   let vver = revv.split("").reverse().join("");
+//   return revv === vver;
+// };
 
-let isTrue = checkDrome("rar");
-console.log(isTrue);
+// let isTrue = checkDrome("rar");
+// console.log(isTrue);
 
 // to count the number of vowel in str/sentence
-const countVowel = (str)=>{
-  let vv = 'AEIOU';
-  return str.toUpperCase().split('').filter((cc)=>vv.includes(cc)).length;
-}
-let se = "Hello, my friend";
-let v = countVowel(se);
-console.log("The number of vowel in ",se," is ",v);
+// const countVowel = (str) => {
+//   let vv = "AEIOU";
+//   return str
+//     .toUpperCase()
+//     .split("")
+//     .filter((cc) => vv.includes(cc)).length;
+// };
+// let se = "Hello, my friend";
+// let v = countVowel(se);
+// console.log("The number of vowel in ", se, " is ", v);
 
 // To check the prime number between 50 - 60
 
-const isPrime  = (nn)=>{
-  if(nn <= 2) return false;
-  for (let i = 2;i<=Math.sqrt(nn);i++){
-    if(nn%i === 0){
-      return false
-    }
-  }
-  return true
-}
+// const isPrime = (nn) => {
+//   if (nn <= 2) return false;
+//   for (let i = 2; i <= Math.sqrt(nn); i++) {
+//     if (nn % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
 
-const rangeTo = (s,e)=>{
-  let prime = [];
-  for(let i = s;i<=e;i++){
-    if(isPrime(i)){
-     prime.push(i);
-    }
-  }
-  return prime
-}
+// const rangeTo = (s, e) => {
+//   let prime = [];
+//   for (let i = s; i <= e; i++) {
+//     if (isPrime(i)) {
+//       prime.push(i);
+//     }
+//   }
+//   return prime;
+// };
 
-let pNum=rangeTo(50,60);
-console.log(pNum);
+// let pNum = rangeTo(50, 60);
+// console.log(pNum);
 
 // Sum of the array
-const sumArray = (arr)=>{
-  return arr.reduce((elem,acc)=>elem+acc);
-}
-let sum = sumArray([1,2]);
-console.log(sum);
+// const sumArray = (arr) => {
+//   return arr.reduce((elem, acc) => elem + acc);
+// };
+// let sum = sumArray([1, 2]);
+// console.log(sum);
 
 // To filter the duplicate in array
-const arr = (ar)=>{
-  return Array.from(new Set(ar));
-}
-let newAr = arr([1,23,44,23,1,5]);
-console.log(newAr.sort((a,b)=>a-b));
+// const arr = (ar) => {
+//   return Array.from(new Set(ar));
+// };
+// let newAr = arr([1, 23, 44, 23, 1, 5]);
+// console.log(newAr.sort((a, b) => a - b));
 
 // LeetCode 1
-const returnCounter = (n)=>{
-  return ()=>{
-     let nn = n;
-     n++;
-     return nn
-  }
-}
-let cc = returnCounter(10);
-console.log(cc());
-console.log(cc());
-console.log(cc());
+// const returnCounter = (n) => {
+//   return () => {
+//     let nn = n;
+//     n++;
+//     return nn;
+//   };
+// };
+// let cc = returnCounter(10);
+// console.log(cc());
+// console.log(cc());
+// console.log(cc());
 
 // LeetCode 2
-const expect = (val)=>{
-  return {
-    tobe:(tt)=>{
-       if(tt !== val){
-        throw new Error("Not Equal");
-       }
-    },
-    notTobe:(ff)=>{
-      if(ff === val){
-        throw new Error("Equal");
-      }
-    }
+// const expect = (val) => {
+//   return {
+//     tobe: (tt) => {
+//       if (tt !== val) {
+//         throw new Error("Not Equal");
+//       }
+//     },
+//     notTobe: (ff) => {
+//       if (ff === val) {
+//         throw new Error("Equal");
+//       }
+//     },
+//   };
+// };
+// try {
+//   expect(8).tobe(5);
+// } catch (error) {
+//   console.log(error.message);
+// }
+
+// Fibonacci series
+// const readline = require('readline');
+// const generateSeries = (n) => {
+//   let series = [];
+//   if (n >= 0) series.push(0);
+//   if (n >= 1) series.push(1);
+//   for (let i = 2;i<n;i++){
+//     let nextSeries = series[i-1]+series[i-2];
+//     if(nextSeries > n){
+//       break;
+//     }
+//     series.push(nextSeries);
+//   }
+//   return series
+// };
+// let r1 = readline.createInterface({
+//   input:process.stdin,
+//   output:process.stdout,
+// })
+
+// r1.question("Upto what number you want to create the series:",(ans)=>{
+//   let n = parseInt(ans);
+//   let serr = generateSeries(n);
+//   console.log(serr);
+//   r1.close();
+// })
+
+// LeetCode 3
+// const createCounter = (init)=>{
+//   let cc = init;
+//   return{
+//     increment:()=>{
+//       cc++;
+//       return cc;
+//     },
+//     decrement:()=>{
+//       cc--;
+//       return cc;
+//     },
+//     reset:()=>{
+//       cc = init;
+//       return cc;
+//     }
+//   }
+// }
+
+// let nn = createCounter(10);
+// console.log(nn.increment());
+// console.log(nn.reset());
+// console.log(nn.decrement());
+
+// LeetCode 4
+const fn =(v,i)=>{
+  return v+1
+  // 1+0=1
+  // 2+1=3
+  // 3+2=5
+}
+const newArray = (arr,fn)=>{
+  let transformArray = [];
+  for(let i=0;i<arr.length;i++){
+    const value=fn(arr[i],i);
+    transformArray.push(value);
   }
+  return transformArray;
 }
-try {
-  expect(8).tobe(5);
-} catch (error) {
-  console.log(error.message);
-}
+let rr = newArray([1,2,3],fn);
+console.log(rr);
+
+
 
