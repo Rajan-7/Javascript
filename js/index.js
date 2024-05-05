@@ -1,5 +1,7 @@
 // console.log("hello friends");
 
+const { log } = require("console");
+
 // values & variables
 // var 1myNmae= "ahri";
 // var _myMother = "God";
@@ -2301,22 +2303,59 @@
 // console.log(nn.decrement());
 
 // LeetCode 4
-const fn =(v,i)=>{
-  return v+1
+const fn = (v) => {
+  return v + 1;
   // 1+0=1
   // 2+1=3
   // 3+2=5
-}
-const newArray = (arr,fn)=>{
+};
+const newArray = (arr, fn) => {
   let transformArray = [];
-  for(let i=0;i<arr.length;i++){
-    const value=fn(arr[i],i);
+  for (let i = 0; i < arr.length; i++) {
+    const value = fn(arr[i], i);
     transformArray.push(value);
   }
   return transformArray;
-}
-let rr = newArray([1,2,3],fn);
+};
+let rr = newArray([1, 2, 3], fn);
 console.log(rr);
+
+// LeetCode 5
+const filteredArray = function(arr,fn){
+  let filterAr = [];
+  for(let i =0;i<arr.length;i++){
+    if(fn(arr[i],i)){
+      filterAr.push(arr[i]);
+    }
+  }
+  return filterAr
+  // return arr.filter((elem,ind)=>elem>10)
+}
+
+const filterFunction = function(val,ind){
+  return val > 10;
+}
+
+let ress = filteredArray([0,10,20,30],filterFunction);
+console.log(ress);
+
+// LeetCode 6
+const reduce = function(nums,fn,init){
+  let finalVal = init;
+  if(nums.length === 0) return init
+  for(let i =0;i<nums.length;i++){
+    finalVal = fn(finalVal,nums[i])
+  }
+  return finalVal
+  // return nums.reduce((acc,cur)=>acc+cur)
+}
+
+const reduceFunction = function(acc,curr){
+  return acc+=curr
+}
+
+let rrr = reduce([1,2,7],reduceFunction,0);
+console.log(rrr);
 
 
 
