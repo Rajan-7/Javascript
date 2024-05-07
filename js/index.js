@@ -828,7 +828,7 @@ const { log } = require("console");
 // iii. using DOM properties or by using reference
 // iv. using addEventListener(type,callbackFunction) : event can be use multiple times
 
-// KeyBoardEvent , MouseEvent, InputEvent
+// KeyBoardEvent , MouseEvent, OutoutputEvent
 
 // 👉👉 TIMING events in javascript
 // １SetTimeout(): setTimeout(function,milliseconds)
@@ -2321,41 +2321,90 @@ let rr = newArray([1, 2, 3], fn);
 console.log(rr);
 
 // LeetCode 5
-const filteredArray = function(arr,fn){
+const filteredArray = function (arr, fn) {
   let filterAr = [];
-  for(let i =0;i<arr.length;i++){
-    if(fn(arr[i],i)){
+  for (let i = 0; i < arr.length; i++) {
+    if (fn(arr[i], i)) {
       filterAr.push(arr[i]);
     }
   }
-  return filterAr
+  return filterAr;
   // return arr.filter((elem,ind)=>elem>10)
-}
+};
 
-const filterFunction = function(val,ind){
+const filterFunction = function (val, ind) {
   return val > 10;
-}
+};
 
-let ress = filteredArray([0,10,20,30],filterFunction);
-console.log(ress);
+// let ress = filteredArray([0, 10, 20, 30], filterFunction);
+// console.log(ress);
 
 // LeetCode 6
-const reduce = function(nums,fn,init){
+const reduce = function (nums, fn, init) {
   let finalVal = init;
-  if(nums.length === 0) return init
-  for(let i =0;i<nums.length;i++){
-    finalVal = fn(finalVal,nums[i])
+  if (nums.length === 0) return init;
+  for (let i = 0; i < nums.length; i++) {
+    finalVal = fn(finalVal, nums[i]);
   }
-  return finalVal
+  return finalVal;
   // return nums.reduce((acc,cur)=>acc+cur)
+};
+
+// const reduceFunction = function (acc, curr) {
+//   return (acc += curr);
+// };
+
+// let rrr = reduce([1, 2, 7], reduceFunction, 0);
+// console.log(rrr);
+
+// Fibonnacci series
+// const generateSeries = (n) => {
+//   let series = [];
+//   if (n >= 0) series.push(0);
+//   if (n >= 1) series.push(1);
+//   for (let i = 2; i < n; i++) {
+//     const nextSer = series[i - 1] + series[i - 2];
+//     if (nextSer > n) {
+//       break;
+//     }
+//     series.push(nextSer);
+//   }
+//   return series;
+// };
+
+// const readline = require('readline');
+// let r1 = readline.createInterface({
+//   input:process.stdin,
+//   output:process.stdout,
+// })
+
+// r1.question("Upto?::",(ans)=>{
+//   let nn = parseInt(ans);
+//   let fs = generateSeries(nn);
+//   console.log(fs);
+//   r1.close();
+// })
+
+
+// Leetcode 7
+const compose = function(fns){
+  return function(x){
+    return fns.reduceRight((acc,fn)=>fn(acc),x);
+  }
 }
 
-const reduceFunction = function(acc,curr){
-  return acc+=curr
+function f(x){
+  return x+1;
 }
 
-let rrr = reduce([1,2,7],reduceFunction,0);
-console.log(rrr);
+function g(x){
+  return x*x;
+}
+function h(x){
+  return 2*x;
+}
 
+let rr2 = compose([f,g,h]);
+console.log(rr2(4));
 
 
