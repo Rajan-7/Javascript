@@ -1,6 +1,8 @@
 // console.log("hello friends");
 
+const { rejects } = require("assert");
 const { log } = require("console");
+const { resolve } = require("path");
 
 // values & variables
 // var 1myNmae= "ahri";
@@ -2413,36 +2415,120 @@ const { log } = require("console");
 
 
 // LeetCode 9 
-const once = function(fn){
-  let called = false;
-  let result;
-  // return function(...args){
-  //   if(!called){
-  //     result = fn.apply(this,args);
-  //     called = true;
-  //     return result;
-  //   }else{
-  //     return "Undefined";
-  //   }
-  // }
+// const once = function(fn){
+//   let called = false;
+//   let result;
+//   // return function(...args){
+//   //   if(!called){
+//   //     result = fn.apply(this,args);
+//   //     called = true;
+//   //     return result;
+//   //   }else{
+//   //     return "Undefined";
+//   //   }
+//   // }
 
-  return (...args)=>{
-    if(!called){
-      result = fn(...args);
-      called=true;
-      return result;
-    }else{
-      return "Undefined";
+//   return (...args)=>{
+//     if(!called){
+//       result = fn(...args);
+//       called=true;
+//       return result;
+//     }else{
+//       return "Undefined";
+//     }
+//   }
+// }
+
+// let fn = (x,y,z)=>(x+y+z);
+// let onceAdd = once(fn);
+// let rr= onceAdd(2,3,5);
+// console.log(rr);
+// let rr1 = onceAdd(2,1,5);
+// console.log(rr1);
+
+// LeetCode 10 : memoized
+const memoize = function(fn){
+  const cache = {};
+  return function(...args){
+    const key = JSON.stringify(args);
+    if(!(key in cache)){
+      cache[key]=fn(...args);
     }
+    return cache[key];
   }
 }
 
-let fn = (x,y,z)=>(x+y+z);
-let onceAdd = once(fn);
-let rr= onceAdd(2,3,5);
-console.log(rr);
-let rr1 = onceAdd(2,1,5);
-console.log(rr1);
+function fact(n){
+  if(n <= 1){
+    return 1
+  }
+  return fact(n-1)*n
+}
+
+function sum(a,b){
+  return a+b;
+}
+
+function fib(n){
+  if(n<=1) return 1
+  return fib(n-1) + fib(n-2)
+}
+
+let fibOize = memoize(fib);
+let sumOize = memoize(sum);
+let factOize = memoize(fact);
+
+
+console.log(sumOize(2,3));
+console.log(sumOize(3,2));
+console.log(fibOize(5));
+console.log(fibOize(6));
+console.log(factOize(4));
+console.log(factOize(3));
+
+console.log(sumOize(2,3));
+console.log(fibOize(5));
+console.log(factOize(3));
+
+// LeetCode 11
+const addTwoPromise = async function(promise1,promise2){
+  const p1 = Promise.resolve(promise1);
+  const p2 = Promise.resolve(promise2);
+
+  let [r1,r2]=await Promise.all([p1,p2]);
+  return r1 + r2
+
+}
+
+addTwoPromise(3,4).then(res=>{
+  console.log("Two promise become",res);
+}).catch(err=>{
+  console.log(err);
+})
+
+// Promise in js
+
+function delay(ms){
+  return new Promise((resolve,rejects)=>{
+    setTimeout(()=>{
+      resolve(`Operation was comppleted in ${ms} ms`)
+    })
+  })
+}
+
+console.log("Promise start");
+delay(2000).then(msg=>{
+  console.log(msg);
+  return delay(3000);
+}).then(msg=>{
+  console.log(msg);
+  console.log("Finally !!!");
+}).catch(err=>{
+  console.log(err);
+})
+console.log("Promise Ended");
+
+
 
 
 
