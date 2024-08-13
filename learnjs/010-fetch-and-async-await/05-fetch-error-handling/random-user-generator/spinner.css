@@ -1,0 +1,64 @@
+.spinner {
+  --frame: 1s;
+}
+
+.spinner,
+.spinner::after,
+.spinner::before {
+  border: 5px solid white;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.spinner {
+  margin: auto;
+  font-size: 4em;
+  position: absolute;
+  top: 4px;
+  left: 140px;
+  width: 0.5em;
+  height: 0.5em;
+  animation: anim-spinner var(--frame) ease infinite;
+  -webkit-animation: anim-spinner var(--frame) ease infinite;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  position: absolute;
+}
+
+.spinner::before {
+  inset: 1px;
+  animation: anim-spinner calc(var(--frame) * 4.3) ease-out infinite;
+  -webkit-animation: anim-spinner calc(var(--frame) * 4.3) ease-out infinite;
+}
+
+.spinner::after {
+  inset: 6px;
+  animation: anim-spinner calc(var(--frame) * 1.51) ease-out infinite;
+  -webkit-animation: anim-spinner calc(var(--frame) * 1.51) ease-out infinite;
+}
+
+
+@keyframes anim-spinner {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+  }
+}

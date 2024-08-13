@@ -8,3 +8,5 @@ function myFunction(){
     //     document.getElementById("demo").innerHTML = t;
     // },1000)
 }
+
+console.log(undefined < 9);
